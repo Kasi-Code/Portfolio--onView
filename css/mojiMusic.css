@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+}
+h1, h2, h3, a, p, ul {
+    color: rgb(218, 218, 218);
+}
+.parentContainer {
+    display: grid;
+    height: 98vh;
+    grid-template-columns: 0.7fr 2fr;
+    grid-template-rows: 0.3fr 2fr;
+    grid-template-areas: 
+        "topContainer topContainer"
+        "leftContainer mainContainer";
+    gap: 0.1rem;
+    text-align: center;
+}.topContainer  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px; padding-right: 10px;
+}
+.topContainer {
+    grid-area: topContainer;
+    background-color: rgb(25, 9, 49);
+}
+.leftContainer {
+    grid-area: leftContainer;
+    background-color: rgb(25, 9, 49);
+ }
+.mainContainer {
+    grid-area: mainContainer;
+    background-color: rgb(25, 9, 49);
+}
+.musicControl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.controlButton {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.musicPlaying {
+    width: 500px;
+    height: auto;
+}
+.musicPlayingScreenshot {
+    width: 100%;
+}
+.stop {
+    display: none;
+}
+a:link, a:visited {
+    text-decoration: none; color: inherit;
+}
+ul {
+    max-width: 99%; 
+    margin: auto;  
+    text-align: left;
+}
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .mojiMusicLogo {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .signIn {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .parentContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 0.09fr 0.09fr;
+        grid-template-areas: "mainContainer" "topContainer" "leftContainer";
+    }
+    .topContainer, .leftContainer {
+        position: sticky;
+        bottom: 0; 
+        width: 100%;
+    }
+    .showcase {
+        padding: 10px 10px;
+    }
+    .allSections {
+        padding-bottom: 10px;
+        padding-left: 15px; padding-right: 15px;
+    }
+    .mojiMusicLogo {
+        display: none;
+    }
+    .musicPlaying {
+        width: 300px;
+        height: auto;
+    }
+}

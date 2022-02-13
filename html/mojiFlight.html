@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moji Flight | &#9992</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/mojiFlight.css">
+</head>
+<body>
+      <section>
+        <div class="w3-bar w3-blue w3-top topNavBar">
+            <span class="w3-mobile">
+                <div class="siteLogo">
+                    <a href="/html/mojiFlight.html" class="w3-bar-item w3-button w3-mobile w3-hover-white"  style="font-weight: bold;">Moji Flight &#9992</a>
+                </div>
+                <div class="skipToNavBar">
+                    <a href="#whereTo" class="w3-bar-item w3-button w3-mobile w3-hover-white ">Where to?</a>  
+                </div>    
+                <div class="skipToNavBar">
+                    <a href="#talkToUs" class="w3-bar-item w3-button w3-mobile w3-hover-white ">Talk to us</a>  
+                </div>       
+            </span>
+            <span class="w3-right w3-mobile navBar">
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-white" style="font-weight: bold;">Check In</a>
+                <a onclick="document.getElementById('singIn').style.display='block'" class="w3-bar-item w3-button w3-mobile w3-hover-white">Sign in</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-white">Help</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-white">Contact</a>
+            </span>            
+          </div>
+     </section>
+      <section class="section showcase">
+          <div class="w3-container w3-center">
+              <span class="w3-text-shadow w3-animate-opacity emoji">👩‍✈️</span>
+              <h1 class="w3-text-shadow w3-animate-opacity">Let's Go!</h1>
+              <hr>
+              <p class="w3-text-shadow w3-animate-opacity">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic iure eaque enim vel doloribus corrupti porro laborum quasi numquam alias vero cupiditate natus doloremque et, quia atque unde non ex.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut nam natus nulla alias eius voluptates ducimus excepturi! Laudantium sunt corrupti quas in? Repellendus beatae nam hic ipsam, tempora temporibus.
+              </p>
+              <button onclick="document.getElementById('start-modal').style.display='block'" class="w3-button w3-blue w3-large w3-hover-white">Start Here</button>
+          </div>
+      </section>
+      <section class="section w3-blue w3-hover-opacity">
+        <div class="w3-container w3-center allSections">
+            <!-- <i class="fa fa-plane"></i> -->
+            <span class="w3-text-shadow w3-animate-opacity emoji">&#128747</span>
+            <h1 class="w3-text-shadow w3-animate-opacity">Go Anywhere</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorum, in et, dolore  odit optio ea doloremque laborum amet, omnis est quam!
+            </p>
+        </div>
+      </section>
+      <section class="section w3-white w3-hover-opacity" id="whereTo">
+        <div class="w3-container w3-center allSections">
+            <!-- <i class="fa fa-plane"></i> -->
+            <span class="w3-text-shadow w3-animate-opacity emojiIcon">&#127757</span>
+            <h1 class="w3-text-shadow w3-animate-opacity">Where to?</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorum, in et, dolore sit similique beatae ab soluta provident odit optio ea quod doloribus doloremque laborum amet, omnis est quam!
+            </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="w3-container allSections">
+            <div class="w3-row-padding">
+                <div class="w3-col m5">
+                    <img src="/media/mojiFlightMedia/emojiHoliday.jpeg" alt="picture of emojiHoliday">
+                </div>
+                <div class="w3-col m7">
+                    <a onclick="accordions('asking')" class="w3-center w3-block w3-blue asking">
+                        Where would it be??
+                    </a>
+                        <div id="asking" class="w3-container w3-show">
+                            <h3>What will be your destination... </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia, quasi...</p>
+                        </div>
+                    <button onclick="accordions('recomendation')" class="w3-button w3-block w3-blue w3-hover-red">
+                        Would you like some reccomendations?
+                    </button>
+                        <div id="recomendation" class="w3-container w3-hide">
+                            <h3>Currently we reccomend this!</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia, quasi, voluptas neque quidem eius excepturi beatae suscipit doloribus numquam, iusto amet labore deleniti facere quo tempore dolores quia voluptatibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis laudantium alias ad, esse aliquid dolorum impedit adipisci nesciunt reiciendis corporis saepe et, harum quia sint repellendus perspiciatis! Repellat, architecto harum?</p>
+                        </div>
+                    <button onclick="accordions('guess')" class="w3-button w3-block w3-blue w3-hover-red">
+                            Would you like us to guess what you'd like?
+                    </button>
+                        <div id="guess" class="w3-container w3-hide">
+                            <h3>If we have to guess then you'll love this!</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia, quasi, voluptas neque quidem eius excepturi beatae suscipit doloribus numquam, iusto amet labore deleniti facere quo tempore dolores quia voluptatibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis laudantium alias ad, esse aliquid dolorum impedit adipisci nesciunt reiciendis corporis saepe et, harum quia sint repellendus perspiciatis! Repellat, architecto harum?</p>
+                        </div>
+                    <button onclick="accordions('popular')" class="w3-button w3-block w3-blue w3-hover-red">
+                            Would you like to know popular places?
+                    </button>
+                        <div id="popular" class="w3-container w3-hide">
+                            <h3>These places are very popular!</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia, quasi, voluptas neque quidem eius excepturi beatae suscipit doloribus numquam, iusto amet labore deleniti facere quo tempore dolores quia voluptatibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis laudantium alias ad, esse aliquid dolorum impedit adipisci nesciunt reiciendis corporis saepe et, harum quia sint repellendus perspiciatis! Repellat, architecto harum?</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="services" class="section services w3-blue w3-hover-opacity">
+        <div class="w3-container w3-center allSections">
+            <!-- <i class="fa fa-plane"></i> -->
+            <span class="w3-text-shadow w3-animate-opacity emoji">&#127894</span>
+            <h1 class="w3-text-shadow w3-animate-opacity">Our Services</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorum, in et, dolore  odit optio ea doloremque laborum amet, omnis est quam!
+            </p>
+        </div>
+      </section>
+      <section id="services" class="section services w3-white">
+        <div class="w3-container w3-center">
+            <div class="w3-row">
+                <div class="w3-col m3 w3-hover-opacity">
+                    <span class="w3-text-shadow w3-animate-opacity emoji">&#9992</span>
+                    <h3>Flight Destination</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="w3-col m3 w3-hover-opacity">
+                    <span class="w3-text-shadow w3-animate-opacity emoji">&#127970</span>
+                    <h3>Accomodation</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="w3-col m3 w3-hover-opacity">
+                    <span class="w3-text-shadow w3-animate-opacity emoji">&#127967</span>
+                    <h3>Entertainment</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="w3-col m3 w3-hover-opacity">
+                    <span class="w3-text-shadow w3-animate-opacity emoji">&#127957</span>
+                    <h3>Extra</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+        </div>
+      </section>
+      <section class="section w3-red w3-hover-opacity" id="talkToUs">
+        <div class="w3-container w3-center allSections">
+            <!-- <i class="fa fa-plane"></i> -->
+            <span class="w3-text-shadow w3-animate-opacity emoji emojiIcon">&#128172</span>
+            <h1 class="w3-text-shadow w3-animate-opacity">Talk to us</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorum, in et, dolore  odit optio ea doloremque laborum amet, omnis est quam!
+            </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="w3-container">
+            <div class="w3-card-4 form">
+                <div class="w3-container w3-green">
+                    <h2>Contact Us</h2>
+                </div>
+                <form class="w3-container">
+                    <label class="w3-label">Name</label>
+                    <input class="w3-input" type="text">
+                    <label class="w3-label">Email</label>
+                    <input class="w3-input" type="email">
+                    <label class="w3-label">Mobile Number</label>
+                    <input class="w3-input" type="number">
+                    <label class="w3-label">Message</label>
+                    <textarea class="w3-input w3-border" style="resize: none;" cols="30" rows="10"></textarea>
+                    <br>
+                    <button type="submit" class="w3-button w3-green w3-hover-red w3-section">Submit</button>
+                </form>
+            </div>
+        </div>
+      <section class="section w3-blue">
+        <div class="w3-container allSections">  
+            <footer class="w3-center">
+              <p>onView | Moji Flight © 2021</p>
+          </footer>
+        </div>
+        </section>
+        <div class="w3-modal" id="start-modal">
+            <div class="w3-modal-content modalForm">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('start-modal').style.display='none'" class="w3-closebtn">&times;</span>
+                    <h2>Get Started</h2>
+                </header>
+                <div class="w3-section">
+                    <form>
+                        <div class="w3-section">
+                            <label>Name</label>
+                            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Name">
+                            <label>Username</label>
+                            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+                            <label>Password</label>
+                            <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Enter Password">
+                            <label>Confirm Password</label>
+                            <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Enter Password">
+                            <button class="w3-blue w3-btn-block w3-section w3-padding">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="w3-modal" id="singIn">
+            <div class="w3-modal-content modalForm">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('singIn').style.display='none'" class="w3-closebtn">&times;</span>
+                    <h2>Get Started</h2>
+                </header>
+                <div class="w3-section">
+                    <form>
+                        <div class="w3-section">
+                            <label>Username</label>
+                            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+                            <label>Password</label>
+                            <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Enter Password">
+                            <button class="w3-blue w3-btn-block w3-section w3-padding">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script src="/js/mojiFlight.js"></script>
+    <script src="/"></script>
+</body>
+</html>

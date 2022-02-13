@@ -1,0 +1,220 @@
+:root{
+    --main-radius: 20px;
+}
+body {
+    background: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(26, 25, 25));
+    font-family: 'Open Sans',Arial,sans-serif;
+    letter-spacing: 0.7px;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-text-size-ad
+}
+.parent {
+    display: grid;
+    height: 98vh;
+    grid-template-columns: 0.8fr 1fr 0.8fr;
+    grid-template-rows: 0.8fr 1fr 0.8fr;
+    grid-template-areas: 
+    "top top top"
+    "left middle right"
+    "bottom bottom bottom";
+}
+.top {
+    grid-area: top;
+    visibility: hidden;
+}
+.left {
+    grid-area: left;
+    visibility: hidden;
+}
+.middle {
+    grid-area: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(133, 133, 133));
+    text-align: center;
+    border-radius: var(--main-radius);
+
+    display: grid;
+    /* height: 98vh; */
+    grid-template-columns: 0.4fr 0.8fr 0.8fr 0.4fr;
+    grid-template-rows: 0.4fr 0.8fr 0.8fr 0.4fr;
+    grid-template-areas: 
+    "nothing2 formsContainer formsContainer nothing5"
+    "nothing2 formsContainer formsContainer nothing5"
+    "nothing2 formsContainer formsContainer  nothing5"
+    "nothing6 formsContainer formsContainer devicesLogo";
+    
+}
+.nothing1 {grid-area: nothing1;} .nothing2 {grid-area: nothing2;} .logo {grid-area: logo;} 
+.formsContainer {grid-area: formsContainer;} .nothing5 {grid-area: nothing5;} .nothing6 {grid-area: nothing6;} 
+.devicesLogo{grid-area: devicesLogo;}
+
+.right {
+    grid-area: right;
+    visibility: hidden;
+}
+.logo {
+    width: 100%; height: auto;
+    animation: logo-load 800ms ease-in;
+}
+.formsContainer {
+    display: flex;
+    flex-direction: column;
+    animation: formsContainer-load 600ms ease-in;
+}
+.loginForm {
+    display: block;
+    width: 100%; height: auto;
+    animation: loginForm-load 600ms ease-in;
+}
+.registerForm {
+    display: none;
+    width: 100%; height: auto;
+    animation: loginForm-load 600ms ease-in;
+}
+.middle {
+    height: 50vh;
+    animation: middle-load 300ms ease-in;
+}
+/* .devicesLogo {
+    animation: devicesLogo-load 1000ms ease-in;
+} */
+.skipButtonSection {
+    grid-area: bottom;
+    display: flex;
+    justify-content: center;
+    /* visibility: hidden; */
+}
+.skipButton {
+    margin-top: 5%;
+    color: white;
+    animation: skipButton-load 1000ms ease-in;
+}
+.formSection {
+    display: flex;
+    flex-direction: row;
+}
+.skipButton:hover, .register:hover, .login:hover {
+    transform: scale(1.05);
+}
+a:link, a:visited {
+    text-decoration: none; color: inherit;
+}
+.devicesImage {
+    width: 100%; height: auto;
+}
+.devicesLogo {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    animation: devicesLogo-load 1000ms ease-in;
+}
+.register, .login {
+    margin-top: 2vh;
+}
+@keyframes middle-load {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateY(1);
+    }
+}
+@keyframes logo-load {
+    0% {
+        transform: translateY(-800%);
+    }
+    90% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes formsContainer-load {
+    50% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateY(1);
+    }
+}
+@keyframes loginForm-load {
+    50% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateY(1);
+    }
+}
+@keyframes devicesLogo-load {
+    50% {
+        transform: scale(0); 
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateY(1);
+    }
+}
+@keyframes skipButton-load {
+    0% {
+        transform: translateY(800%);
+    }
+    90% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@media (max-width: 1010px){
+    .top {
+        display: none;
+    }
+    .bottom {
+        /* display: none; */
+        position: sticky;
+        bottom: 0.5%; 
+    }
+    .left {
+        display: none;
+    }
+    .right {
+        display: none;
+    }
+    .middle {
+        height: 30vh;
+        width: 50vh;
+    }
+    .devicesImage {
+        width: 100%; height: auto;
+    }
+    .middle {
+        height: 45vh;
+    }
+    .logoImage {
+        width: 40%; height: auto;
+    }
+}
+@media (max-height: 800px) and (max-width: 1010px){
+    .nothing2, .nothing5, hr {
+        display: none;
+    }
+}
+@media (max-height: 600px) and (max-width: 1010px){
+    .nothing2, .nothing5, hr {
+        display: none;
+    }
+}

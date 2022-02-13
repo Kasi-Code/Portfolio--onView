@@ -1,0 +1,68 @@
+/* .siteLogo {
+    font-size: 20px;
+} */
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+p {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+/* .topNavBar {
+    box-shadow: 1px 1px 2px white;
+} */
+.emoji {
+    opacity: 0.7;
+    font-size: 60px;
+    font-weight: 700;
+}
+.showcase {
+    background: url("/media/mojiFlightMedia/showcaseSkyBGedited.jpg") no-repeat;
+    background-position: left center;
+    height: 600px;
+    padding: 100px 100px;
+    color: white;
+}
+.showcase hr {
+    width: 250px;
+    margin: auto;
+}
+.emojiIcon {
+    opacity: 0.7;
+    font-size: 40px;
+    font-weight: 700;
+}
+.allSections {
+    padding: 20px 100px;
+}
+.section img {
+    width: 100%;
+}
+.asking {
+    padding-top: 7px; padding-bottom: 7px;
+}
+.form {
+    margin-top: 15px; margin-bottom: 15px;
+}
+.modalForm {
+    padding: 10px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin-top: 190px;
+    }
+    .showcase {
+        height: 500px;
+        padding: 10px 10px;
+    }
+    .allSections {
+        padding-bottom: 10px; padding-top: 10px; 
+        padding-left: 15px; padding-right: 15px;
+    }
+    .skipToNavBar {
+        display: none;
+    }
+}

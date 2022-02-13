@@ -1,0 +1,344 @@
+body {
+    background-color: black;
+    color: white;
+    animation: home-load 300ms ease-in;
+    padding-top: 5px;
+}
+:root{ 
+    --main-radius: 15px; --main-padding: 5px;
+    --main-black-BG: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(26, 25, 25));
+    --main-white-BG: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(133, 133, 133));
+}
+.container {
+    display: grid;
+    height: 98vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.2fr 0.2fr;
+    grid-template-areas: 
+        "picOfKasi main1 main1"
+        "aboutMe main1 main1"
+        "nav nav nav";
+    gap: 0.4rem;
+    text-align: center;
+    margin-left: 10%; margin-right: 10%;
+}
+.weather {
+    border-radius: var(--main-radius);
+    margin-bottom: 0.4rem;
+    width: 100%;
+}
+.weatherList {
+    margin: 0;
+    padding: 0; 
+    padding-left: 2vh; padding-right: 2vh;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.profilePicContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--main-radius);
+    animation: picOfKasi-load 800ms ease-in;
+    margin-bottom: 3px;
+}
+#imageOfKasi {
+    border-radius: var(--main-radius);
+    margin-bottom: 0;
+    height: 400px;
+}
+.aboutMe, .profileInfoGrid, .hobbyInfoGrid, .skillsInfoGrid {
+    padding-left: 10%; padding-right: 10%;
+    background: var(--main-black-BG);
+    border-radius: var(--main-radius);
+}
+.aboutMe {
+    padding-bottom: 10px;
+    margin-top: -0.25rem;
+    grid-area: aboutMe;
+    border-radius: var(--main-radius);
+}
+.profileInfoGrid {
+    grid-area: main1;
+    padding-top: var(--main-padding);
+    animation: home-load 300ms ease-in;
+}
+.hobbyInfoGrid {
+    grid-area: main1;
+    padding-top: var(--main-padding);
+    display: none;
+    overflow: auto;
+    animation: hobby-load 300ms ease-in;
+}
+.hobbyVideo {
+    border-radius: var(--main-radius);
+    width: 100%; height: auto;
+    animation: video-load 800ms ease-in;
+}
+.skillsInfoGrid {
+    grid-area: main1;
+    padding-top: var(--main-padding);
+    display: none;
+    overflow: auto;
+    animation: skills-load 400ms ease-in;
+}
+.projectHeader {
+    width: 100%;
+}
+.projectContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.thumnailContainer {
+    width: 200px; 
+    margin-top: auto; margin-bottom: auto;
+}
+.projectImageThumnail {
+    width: 100%;
+    border-radius: var(--main-radius);
+}
+.projectDescription {
+    width: 300px; 
+    text-align: left;
+}
+.projectButton {
+    /* background-color: hotpink; */
+    width: 150px;
+    padding: 2px;
+    margin-left: auto; margin-right: auto;
+}
+.githubLogo, .linkedinLogo {
+    height: 30px;
+    border-radius: 5px;
+}
+h1 {
+    animation: h1-load 300ms ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    font-size: 16px;
+}
+h2 {
+    animation: h2-load 300ms ease-in 600ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    font-size: 14px;
+    opacity: 0;
+}
+p, a, ul, label {
+    font-size: 14px;
+}
+p, ul, .navBar, .goTopPage, .button, .thumnailContainer {
+    animation: P-load 300ms ease-in 1050ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.goTopPage {
+    display: none;
+}
+.goBottomPage {
+    display: none;
+    margin-bottom: 1vh;
+}
+.bottomPageSection {
+    background: var(--main-black-BG);
+    grid-area: nav;
+    padding-top: var(--main-padding);
+    border-top-left-radius: 15px; border-top-right-radius: 015px;
+    animation: navBar-load 1000ms ease-in;
+}
+.listOfJS, .smallerText {
+    font-size: smaller;
+}
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+}
+h1, h2, p, a, ul, label {
+    font-family: 'Open Sans',Arial,sans-serif;
+    letter-spacing: 0.7px;
+    line-height: 20px;
+    -webkit-text-size-ad;
+}
+ul {
+    max-width: 99%; 
+    margin: auto;  
+    text-align: left;
+}
+.emailButton {
+    margin-top: 5%;
+    opacity: 1;
+}
+a:link, a:visited {
+    text-decoration: none; color: inherit;
+}
+a:hover {
+    transform: scale(1.2);
+}
+.emailIcon:hover {
+    color: red;
+}
+.darkButton, .clearskyIcon, .Clouds, .overcastClouds, .moderateRain, .snow, .clearSkyNight {display: none;}
+
+/* AMAZING TRANSFORM/ANIMATION!!  */
+@keyframes home-load {
+    0% {
+        transform: scale(0);
+    }
+    /* 90% {
+        transform: scale(1.1);
+    } */
+    100% {
+        transform: translateY(1);
+    }
+}
+@keyframes picOfKasi-load {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateY(1);
+    }
+}
+@keyframes hobby-load {
+    0% {
+        transform: translateY(-80%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes video-load {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateY(1);
+        opacity: 1;
+    }
+}
+@keyframes skills-load {
+    0% {
+        transform: translateY(-80%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes h1-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);        
+        opacity: 0.8;
+    }
+}
+@keyframes h2-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);        
+        opacity: 0.7;
+    }
+}
+@keyframes P-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    90% {
+        /* transform: translateY(1px);   */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);        
+        opacity: 0.6;
+    }
+}
+@keyframes navBar-load {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);        
+        opacity: 0.6;
+    }
+}
+
+/* SCREEN SIZING */
+@media (max-width: 1010px) {
+    .container {
+        margin-left: 0%; margin-right: 0%;
+    }.weatherList {
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .profileInfoGrid, .skillsInfoGrid, .hobbyInfoGrid, .mojiFlightDescription {
+        padding-left: 0; padding-right: 0;
+    }
+    .projectDescription {
+        text-align: center;
+    }
+}
+@media (max-width: 550px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 1.2fr 1.2fr 0.4fr;
+        grid-template-areas: "picOfKasi" "aboutMe" "main1" "nav";
+    }
+    .goTopPage {
+        display: block; 
+        margin-bottom: 10%;
+    }
+    .bottomPageSection {
+        /* overflow: hidden; */
+        position: sticky;
+        bottom: 0; 
+        height: 4vh;
+        width: 100%;
+    }
+    .projectDescription {
+        width: 100%; 
+        height: auto;
+    }
+    .profileInfoGrid, .skillsInfoGrid, .hobbyInfoGrid, .projectDescription {
+        padding-left: 0; padding-right: 0;
+    }
+    .profileInfoGrid {
+        overflow: unset;
+    }
+    .hobbyInfoGrid {
+        overflow: unset;
+    }
+    .skillsInfoGrid {
+        overflow: unset;
+    }    
+    .weatherList {
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+}
