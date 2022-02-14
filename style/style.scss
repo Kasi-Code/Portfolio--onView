@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:link { text-decoration: none; }
+
+@import 
+"./abstracts/variables",
+"./abstracts/mixins";
+
+// INDEX PAGE
+@import 
+"./pages/main",
+"./components/skip-btn",
+"./pages/login-card";
+
+// PROFILE PAGE
+
+.card-index__form__input {
+    &.register {
+        display: none;
+    }
+}

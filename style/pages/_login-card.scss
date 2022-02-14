@@ -1,0 +1,50 @@
+
+.card-index {
+    @include flex-column;
+    justify-content: space-evenly;
+    @include centre;
+    align-items: center;
+    margin-top: 150px;
+    border-radius: 20px;
+    max-width: 600px;
+    min-height: 400px;
+    background: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(133, 133, 133));
+    position: relative;
+    &__logo {
+        height: 75px;
+    }
+    hr {
+        width: 60%;
+    }
+    &__form {
+        .submit {
+            cursor: pointer;
+        }
+        &__input {
+            &-register {
+                a {
+                    color: black;
+                    &:visited {
+                        color: black;
+                    }
+                }
+            }            
+        }
+    }
+    &__platform {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: 70px;
+    }
+}
+
+/* MOBILE SCREEN SIZING */
+
+@media (max-width: 370px) {
+    .card-index__platform {  
+        height: 40px;
+    }
+}
