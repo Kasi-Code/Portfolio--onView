@@ -296,6 +296,7 @@ main {
   margin-top: 150px;
   border-radius: 20px;
   max-width: 600px;
+  min-width: 250px;
   min-height: 400px;
   background: -webkit-gradient(linear, left top, right bottom, from(white), to(#858585));
   background: linear-gradient(to right bottom, white, #858585);
@@ -317,8 +318,8 @@ main {
 }
 
 .card-index__form {
-  -webkit-animation: loading-input 3s ease-in;
-          animation: loading-input 3s ease-in;
+  -webkit-animation: loading-input 2s ease-in;
+          animation: loading-input 2s ease-in;
 }
 
 .card-index__form .submit {

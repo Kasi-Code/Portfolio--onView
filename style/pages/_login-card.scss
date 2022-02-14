@@ -7,6 +7,7 @@
     margin-top: 150px;
     border-radius: 20px;
     max-width: 600px;
+    min-width: 250px;
     min-height: 400px;
     background: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(133, 133, 133));
     position: relative;
@@ -23,7 +24,7 @@
         animation: loading-hr 1.3s ease-in;
     }
     &__form {
-        animation: loading-input 3s ease-in;
+        animation: loading-input 2s ease-in;
         .submit {
             cursor: pointer;
         }
