@@ -10,13 +10,20 @@
     min-height: 400px;
     background: linear-gradient(to right bottom, rgb(255, 255, 255), rgb(133, 133, 133));
     position: relative;
+
+    // NAME | DURATION | ESASING | DELAY | REAPEAT | STAY
+
+    animation: loading-form 600ms ease-in;
     &__logo {
         height: 75px;
+        animation: loading-logo 800ms ease-in;
     }
     hr {
         width: 60%;
+        animation: loading-hr 1.3s ease-in;
     }
     &__form {
+        animation: loading-middle 300ms ease-in;
         .submit {
             cursor: pointer;
         }
@@ -31,13 +38,14 @@
             }            
         }
     }
-    &__platform {
+    &__platform { 
         bottom: 0;
         right: 0;
         position: absolute;
         margin-right: 10px;
         margin-bottom: 10px;
         height: 70px;
+        animation: loading-platform 900ms ease-in;
     }
 }
 
