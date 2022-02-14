@@ -40,33 +40,33 @@ a:link {
   }
 }
 
-@-webkit-keyframes loading-middle {
+@-webkit-keyframes loading-input {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 9;
   }
   90% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    opacity: .8;
   }
   100% {
-    -webkit-transform: translateY(1);
-            transform: translateY(1);
+    opacity: 1;
   }
 }
 
-@keyframes loading-middle {
+@keyframes loading-input {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 9;
   }
   90% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    opacity: .8;
   }
   100% {
-    -webkit-transform: translateY(1);
-            transform: translateY(1);
+    opacity: 1;
   }
 }
 
@@ -317,8 +317,8 @@ main {
 }
 
 .card-index__form {
-  -webkit-animation: loading-middle 300ms ease-in;
-          animation: loading-middle 300ms ease-in;
+  -webkit-animation: loading-input 3s ease-in;
+          animation: loading-input 3s ease-in;
 }
 
 .card-index__form .submit {
