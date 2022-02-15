@@ -24,19 +24,33 @@
         animation: loading-hr 1.3s ease-in;
     }
     &__form {
-        animation: loading-input 2s ease-in;
+        animation: loading-input .8s ease-in;
         .submit {
             cursor: pointer;
         }
         &__input {
-            &-register {
-                a {
-                    color: black;
-                    &:visited {
+            &.login {
+                // display: none; // <-- ON/OFF
+                &-register {
+                    a {
                         color: black;
+                        &:visited {
+                            color: black;
+                        }
                     }
                 }
-            }            
+            }    
+            &.register {
+                display: none; // <-- ON/OFF
+                &-login {
+                    a {
+                        color: black;
+                        &:visited {
+                            color: black;
+                        }
+                    }
+                }
+            }           
         }
     }
     &__platform { 

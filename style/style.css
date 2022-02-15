@@ -41,32 +41,32 @@ a:link {
 }
 
 @-webkit-keyframes loading-input {
-  0% {
-    opacity: 0;
-  }
   50% {
-    opacity: 9;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   90% {
-    opacity: .8;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    opacity: 1;
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
   }
 }
 
 @keyframes loading-input {
-  0% {
-    opacity: 0;
-  }
   50% {
-    opacity: 9;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   90% {
-    opacity: .8;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    opacity: 1;
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
   }
 }
 
@@ -318,19 +318,31 @@ main {
 }
 
 .card-index__form {
-  -webkit-animation: loading-input 2s ease-in;
-          animation: loading-input 2s ease-in;
+  -webkit-animation: loading-input .8s ease-in;
+          animation: loading-input .8s ease-in;
 }
 
 .card-index__form .submit {
   cursor: pointer;
 }
 
-.card-index__form__input-register a {
+.card-index__form__input.login-register a {
   color: black;
 }
 
-.card-index__form__input-register a:visited {
+.card-index__form__input.login-register a:visited {
+  color: black;
+}
+
+.card-index__form__input.register {
+  display: none;
+}
+
+.card-index__form__input.register-login a {
+  color: black;
+}
+
+.card-index__form__input.register-login a:visited {
   color: black;
 }
 
@@ -350,9 +362,5 @@ main {
   .card-index__platform {
     height: 40px;
   }
-}
-
-.card-index__form__input.register {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
