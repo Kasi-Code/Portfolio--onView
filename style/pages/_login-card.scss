@@ -34,7 +34,7 @@
         &__input {
             &.login {
                 animation: loading-input .5s ease-in;
-                // display: none; // <-- ON/OFF
+                display: block;
                 &-register {
                     a {
                         color: black;

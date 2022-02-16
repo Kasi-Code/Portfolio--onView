@@ -329,6 +329,7 @@ main {
 .card-index__form__input.login {
   -webkit-animation: loading-input .5s ease-in;
           animation: loading-input .5s ease-in;
+  display: block;
 }
 
 .card-index__form__input.login-register a {
