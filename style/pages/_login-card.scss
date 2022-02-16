@@ -8,28 +8,30 @@
     border-radius: 20px;
     max-width: 600px;
     min-width: 250px;
-    min-height: 400px;
+    // min-height: 400px;
+    padding: 20px 10px 20px 10px;
     background: $color-day;
     position: relative;
 
     // NAME | DURATION | ESASING | DELAY | REAPEAT | STAY
 
-    animation: loading-form 600ms ease-in;
+    animation: loading-form 400ms ease-in;
     &__logo {
         height: 75px;
         animation: loading-logo 800ms ease-in;
     }
     hr {
+        margin: 20px 0 20px 0;
         width: 60%;
-        animation: loading-hr 1.3s ease-in;
+        animation: loading-hr .9s ease-in;
     }
     &__form {
-        animation: loading-input .8s ease-in;
         .submit {
             cursor: pointer;
         }
         &__input {
             &.login {
+                animation: loading-input .5s ease-in;
                 // display: none; // <-- ON/OFF
                 &-register {
                     a {
@@ -41,6 +43,7 @@
                 }
             }    
             &.register {
+                animation: loading-input .6s ease-in;
                 display: none; // <-- ON/OFF
                 &-login {
                     a {
@@ -60,7 +63,7 @@
         margin-right: 10px;
         margin-bottom: 10px;
         height: 70px;
-        animation: loading-platform 900ms ease-in;
+        animation: loading-platform 700ms ease-in;
     }
 }
 

@@ -14,6 +14,7 @@ a:link {
   0% {
     -webkit-transform: translateY(800%);
             transform: translateY(800%);
+    opacity: 0;
   }
   90% {
     -webkit-transform: translateY(-20%);
@@ -22,6 +23,7 @@ a:link {
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    opacity: 1;
   }
 }
 
@@ -29,6 +31,7 @@ a:link {
   0% {
     -webkit-transform: translateY(800%);
             transform: translateY(800%);
+    opacity: 0;
   }
   90% {
     -webkit-transform: translateY(-20%);
@@ -37,6 +40,7 @@ a:link {
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    opacity: 1;
   }
 }
 
@@ -263,8 +267,8 @@ main {
   color: white;
   width: 50px;
   height: 50px;
-  -webkit-animation: loading-skip-btn 1000ms ease-in;
-          animation: loading-skip-btn 1000ms ease-in;
+  -webkit-animation: loading-skip-btn .9s ease-in;
+          animation: loading-skip-btn .9s ease-in;
   -webkit-transition: all .015ms ease-in-out;
   transition: all .015ms ease-in-out;
 }
@@ -297,12 +301,12 @@ main {
   border-radius: 20px;
   max-width: 600px;
   min-width: 250px;
-  min-height: 400px;
+  padding: 20px 10px 20px 10px;
   background: -webkit-gradient(linear, left top, right bottom, from(white), to(#858585));
   background: linear-gradient(to right bottom, white, #858585);
   position: relative;
-  -webkit-animation: loading-form 600ms ease-in;
-          animation: loading-form 600ms ease-in;
+  -webkit-animation: loading-form 400ms ease-in;
+          animation: loading-form 400ms ease-in;
 }
 
 .card-index__logo {
@@ -312,18 +316,19 @@ main {
 }
 
 .card-index hr {
+  margin: 20px 0 20px 0;
   width: 60%;
-  -webkit-animation: loading-hr 1.3s ease-in;
-          animation: loading-hr 1.3s ease-in;
-}
-
-.card-index__form {
-  -webkit-animation: loading-input .8s ease-in;
-          animation: loading-input .8s ease-in;
+  -webkit-animation: loading-hr .9s ease-in;
+          animation: loading-hr .9s ease-in;
 }
 
 .card-index__form .submit {
   cursor: pointer;
+}
+
+.card-index__form__input.login {
+  -webkit-animation: loading-input .5s ease-in;
+          animation: loading-input .5s ease-in;
 }
 
 .card-index__form__input.login-register a {
@@ -335,6 +340,8 @@ main {
 }
 
 .card-index__form__input.register {
+  -webkit-animation: loading-input .6s ease-in;
+          animation: loading-input .6s ease-in;
   display: none;
 }
 
@@ -353,8 +360,8 @@ main {
   margin-right: 10px;
   margin-bottom: 10px;
   height: 70px;
-  -webkit-animation: loading-platform 900ms ease-in;
-          animation: loading-platform 900ms ease-in;
+  -webkit-animation: loading-platform 700ms ease-in;
+          animation: loading-platform 700ms ease-in;
 }
 
 /* MOBILE SCREEN SIZING */

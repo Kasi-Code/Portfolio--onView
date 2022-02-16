@@ -2,12 +2,14 @@
 @keyframes loading-skip-btn {
     0% {
         transform: translateY(800%);
+        opacity: 0;
     }
     90% {
         transform: translateY(-20%);
     }
     100% {
         transform: translateY(0%);
+        opacity: 1;
     }
 }
 @keyframes loading-input {

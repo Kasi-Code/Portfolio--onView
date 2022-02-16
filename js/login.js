@@ -1,7 +1,7 @@
-const registerForm = document.querySelector(".registerForm");
-const loginForm = document.querySelector(".loginForm");
-const clickRegister = document.querySelector(".register");
-const clickLogin = document.querySelector(".login");
+const registerForm = document.querySelector(".register");
+const loginForm = document.querySelector(".login");
+const clickRegister = document.querySelector(".login-register");
+const clickLogin = document.querySelector(".register-login");
 
 clickRegister.addEventListener('click', function(){
     registerForm.style.display = "block";
