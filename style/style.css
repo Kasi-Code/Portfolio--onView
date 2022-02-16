@@ -216,14 +216,6 @@ a:link {
   }
 }
 
-main {
-  background-color: black;
-  height: 100vh;
-  text-align: center;
-  padding: 15px;
-  overflow: hidden;
-}
-
 @-webkit-keyframes scaleUp {
   100% {
     -webkit-transform: scale(1.1);
@@ -258,6 +250,14 @@ main {
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px);
   }
+}
+
+main {
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+  padding: 15px;
+  overflow: hidden;
 }
 
 .skip-btn {
@@ -311,8 +311,8 @@ main {
 
 .card-index__logo {
   height: 75px;
-  -webkit-animation: loading-logo 800ms ease-in;
-          animation: loading-logo 800ms ease-in;
+  -webkit-animation: loading-logo 800ms ease-in, scaleUp 1s ease-in 1.5s;
+          animation: loading-logo 800ms ease-in, scaleUp 1s ease-in 1.5s;
 }
 
 .card-index hr {

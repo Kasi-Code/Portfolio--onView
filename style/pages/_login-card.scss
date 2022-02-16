@@ -18,7 +18,9 @@
     animation: loading-form 400ms ease-in;
     &__logo {
         height: 75px;
-        animation: loading-logo 800ms ease-in;
+        animation: 
+        loading-logo 800ms ease-in,
+        scaleUp 1s ease-in 1.5s;
     }
     hr {
         margin: 20px 0 20px 0;

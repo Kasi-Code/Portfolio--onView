@@ -32,6 +32,7 @@
     }
     100% {
         transform: translateY(1);
+
     }
 }
 @keyframes loading-logo {
@@ -76,12 +77,33 @@
     }
 }
 
-
-
 @mixin rotate-tools {
     transition: all .5s ease-in-out;
 }
 
 @mixin rotating1 {
     transform: rotate(359deg);   
+}
+
+@mixin scale-up-tools {
+    transition: all .015ms ease-in-out;
+}
+
+@mixin scale-up {
+    transform: scale(1.1) translateY(-1px);   
+}
+
+@keyframes scaleUp {
+    100% {
+        transform: scale(1.1)
+    }
+  }
+
+@keyframes transT {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-2px);
+    }
 }
