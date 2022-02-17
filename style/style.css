@@ -109,8 +109,8 @@ a:link {
             transform: scale(0);
   }
   90% {
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: translateY(1);
@@ -124,8 +124,8 @@ a:link {
             transform: scale(0);
   }
   90% {
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: translateY(1);
@@ -445,18 +445,17 @@ main {
       justify-content: space-around;
   background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
   background: linear-gradient(to right bottom, black, #1a1919);
-  padding: 10px 40px;
+  padding: 10px 10px;
   width: 100%;
   min-width: 350px;
   border-radius: 20px;
 }
 
 .profile .card-1__personale .hr-dec-prof {
-  width: 100%;
+  margin: 10px auto 10px auto;
+  width: 90%;
   -webkit-animation: loading-hr-prof .9s ease-in;
           animation: loading-hr-prof .9s ease-in;
-  margin: auto;
-  margin: 10px 0 10px 0;
 }
 
 .profile .card-1__personale-status {

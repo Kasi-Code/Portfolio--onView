@@ -11,14 +11,12 @@
         @include flex-column;
         justify-content: space-around;
         background: $color-night;
-        padding: 10px 40px;
+        padding: 10px 10px;
         width: 100%;
         min-width: 350px;
         border-radius: $br-20;
         .hr-dec-prof {
             @include hr-decoration-prof;
-            @include centre;
-            margin: 10px 0 10px 0;
         }
         &-status {
             margin: 10px 0;
