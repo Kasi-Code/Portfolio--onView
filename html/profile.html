@@ -54,11 +54,11 @@
             </div>
         </div>
         <div class="card-2">
-            <div class="card-2__info">              
+            <div class="card-2__about-me">              
                 <h2>About Me</h2>
-                <hr>
+                <hr class="hr-dec-prof">
                 <br>
-                <div class="card-2__info-paragraph">
+                <div class="card-2__about-me-paragraph">
                     <P>
                         Learning to code requires consistency, persistent and self-discipline. It has been a difficult journey but I have never done something so rewarding. At this point, I feel I can build multipage websites with my HTML, CSS and other Programming languages.
                     </P>
@@ -74,19 +74,19 @@
                 <br><br>
                 <div class="goTopPage"><a href="#">Top Page</a></div>
             </div>
-            <div class="skillsInfoGrid" id="skillsInfoGrid">
-                <div class="skillPage" id="skillPage">
-                    <h1>Skills</h1>
-                <hr>
-                <h2>Front-End Development</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS/SASS/SCSS</li>
-                    <ul>
-                        <li>BEM naming and reusable</li>
-                        <li>CSS animation</li>
-                    </ul>
-                    <li>JavaScript</li>
+            <div class="card-2__skills">
+                <div class="card-2__skills-page">
+                    <h2>Skills</h2>
+                    <hr class="hr-dec-prof">
+                    <p class="sub-heading">Front-End Development</p>
+                    <ul class="txt-sub">
+                        <li>HTML</li>
+                        <li>CSS/SASS/SCSS</li>
+                        <ul>
+                            <li>BEM naming and reusable</li>
+                            <li>CSS animation</li>
+                        </ul>
+                        <li>JavaScript</li>
                         <ul class="listOfJS">
                             <li>Interactive Websites</li>
                             <li>Intermediate JavaScript</li>
@@ -99,30 +99,31 @@
                             <li>Persistent API</li>
                             <li>Test-Driven Development</li>
                         </ul>
-                </ul>
-                <h2>Programming Languages</h2>
-                <ul>
-                    <li>Python 3</li>
-                    <li>PHP</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                </ul>
-                <div class="projectButton button" id="projectButton">
-                    <p><a class="w3-hover-opacity" href="#projectPage">>> PROJECTS <<</a></p>                
+                    </ul>
+                    <p class="sub-heading">Programming Languages</p>
+                    <ul class="txt-sub">
+                        <li>Python 3</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>C#</li>
+                    </ul>
+                    <div class="projectButton button" id="projectButton">
+                    <p class="sub-heading"><a class="w3-hover-opacity" href="#projectPage">>> PROJECTS <<</a></p>                
                 </div>
-                <p class="smallerText" style="font-style: italic;">- I have gained all the development skills through Codecademy and Openclassroom outsources with the assistance of
+                <p class="txt-sub" style="font-style: italic;">- I have gained all the development skills through Codecademy and Openclassroom outsources with the assistance of
                     tutors/mentor from the IT Career Switch and GlosCol Skills Bootcamp.
                 </p>
-                <p class="smallerText" style="font-style: italic;">- I have passed and obtained the certificates of an Official Microsoft Exam for HTML, CSS and more.
+                <br>
+                <p class="txt-sub" style="font-style: italic;">- I have passed and obtained the certificates of an Official Microsoft Exam for HTML, CSS and more.
                 </p>
-                <h2>Others</h2>    
-                <ul>
+                <p class="sub-heading">Others</p>    
+                <ul class="txt-sub">
                     <li>Photoshop</li>
                     <li>Video editing</li>
                 </ul>
                 </div>
                 <div class="projectPage" id="projectPage">
-                    <h1>Projects</h1>
+                    <h2>Projects</h2>
                 <hr>
                 <div class="projectsParentContainer">       
                     <div class="projectHeader"><h2>Moji Gazzetter</h2></div>
@@ -219,7 +220,7 @@
                 <div class="goTopPage"><a href="#">Top Page</a></div>
             </div>
             <div class="hobbyInfoGrid" id="hobbyInfoGrid">
-                <h1>Hobby</h1>
+                <h2>Hobby</h2>
                 <hr>
                 <p>- This video was captured at 4k 30fps and edited using a mobile device.</p>
                 <p>- This video was edited via the app <em>Power Director</em>.</p>
@@ -246,15 +247,15 @@
                 <div class="goTopPage"><a href="#">Top Page</a></div>
             </div>
         </div>
+        <nav class="bottom-nav">
+            <a class="indexButton" href="/index.html">oV</a> 
+            <a class="card-1Button" href="#card-1InfoGrid">Profile</a> 
+            <a class="skillsButton" href="#skillPage">Skills</a> 
+            <a class="hobbyButton" href="#hobbyInfoGrid">Hobby</a> 
+            <a class="dark-mode" href="#light-btn">Dark &#127769</a> 
+            <a class="light-mode" href="#dark-btn">Light &#127774</a>
+        </nav>
     </div>
-    <nav class="bottom-nav">
-        <a class="indexButton" href="/index.html">oV</a> 
-        <a class="card-1Button" href="#card-1InfoGrid">Profile</a> 
-        <a class="skillsButton" href="#skillPage">Skills</a> 
-        <a class="hobbyButton" href="#hobbyInfoGrid">Hobby</a> 
-        <a class="dark-mode" href="#light-btn">Dark &#127769</a> 
-        <a class="light-mode" href="#dark-btn">Light &#127774</a>
-    </nav>
     <script src="/js/themeColor.js"></script>
     <!-- <script src="/js/weather2.js"></script> -->
 </body>

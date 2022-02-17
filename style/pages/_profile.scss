@@ -4,6 +4,12 @@ a {
         color: $txt-color-night;        
     }
 }
+ul {
+    text-align: left;
+}
+.sub-heading {
+    margin: 10px 0;
+}
 
 .profile {
     @include centre;
@@ -11,10 +17,11 @@ a {
     justify-content: center;
     @import 
     "./card-1",
-    "./card-2";
+    "./card-2",
+    "./skills";
     max-width: 1200px;
-    // height: 92vh;
-    // background-color: aliceblue;
+    max-height: 90vh;
+    // overflow: auto;
     color: $txt-color-night;
     gap: $gap;
     // position: relative;

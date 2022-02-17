@@ -1,0 +1,15 @@
+
+&__skills {
+    // display: none;
+        height: 100%;
+        overflow: auto;
+    .hr-dec-prof {
+        @include hr-decoration-prof;
+    }
+    &-paragraph {
+        max-height: 500px;
+        p {
+            margin-top: 20px;
+        }
+    }
+}
