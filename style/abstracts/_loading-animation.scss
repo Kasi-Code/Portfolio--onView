@@ -35,6 +35,18 @@
 
     }
 }
+@keyframes loading-hr-prof {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: translateY(1);
+
+    }
+}
 @keyframes loading-logo {
     0% {
         transform: translateY(-800%);

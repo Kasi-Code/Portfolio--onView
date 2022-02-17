@@ -103,6 +103,36 @@ a:link {
   }
 }
 
+@-webkit-keyframes loading-hr-prof {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  90% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+}
+
+@keyframes loading-hr-prof {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  90% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+}
+
 @-webkit-keyframes loading-logo {
   0% {
     -webkit-transform: translateY(-800%);
@@ -314,7 +344,7 @@ main {
           animation: loading-logo 800ms ease-in, scaleUp 1s ease-in 1.5s;
 }
 
-.card-index hr {
+.card-index .hr-dec {
   margin: 20px 0 20px 0;
   width: 60%;
   -webkit-animation: loading-hr .9s ease-in;
@@ -419,6 +449,14 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+}
+
+.profile .card-1__personale .hr-dec {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  -webkit-animation: loading-hr-prof .9s ease-in;
+          animation: loading-hr-prof .9s ease-in;
+  margin: auto;
 }
 
 .profile .card-1__personale__list {

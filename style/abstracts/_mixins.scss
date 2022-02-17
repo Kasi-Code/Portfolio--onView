@@ -11,3 +11,14 @@
 @mixin padding-main {
     padding: 20px 10px 20px 10px;
 }
+@mixin hr-decoration {
+    margin: 20px 0 20px 0;
+    width: 60%;
+    animation: loading-hr .9s ease-in;    
+}
+
+@mixin hr-decoration-prof {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    animation: loading-hr-prof .9s ease-in;    
+}

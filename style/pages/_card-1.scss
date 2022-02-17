@@ -15,7 +15,10 @@
         width: 100%;
         height: 100%;
         border-radius: $br-20;
-        // height: 50%;
+        .hr-dec {
+            @include hr-decoration-prof;
+            @include centre;
+        }
         &__list {
             text-align: start;
             width: 250px;
