@@ -426,7 +426,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1200px;
-  max-height: 700px;
+  height: 100%;
   color: #969696;
   gap: 10px;
   padding: 10px;
@@ -520,16 +520,14 @@ ul {
 }
 
 .profile .card-2 {
-  max-width: 890px;
+  height: 670px;
+  width: 150%;
   background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
   background: linear-gradient(to right bottom, black, #1a1919);
   padding: 20px 100px;
   border-radius: 20px;
   position: relative;
-}
-
-.profile .card-2__about-me {
-  display: none;
+  overflow: auto;
 }
 
 .profile .card-2__about-me .hr-dec-prof {
@@ -539,18 +537,16 @@ ul {
           animation: loading-hr-prof .9s ease-in;
 }
 
-.profile .card-2__about-me-paragraph {
-  max-height: 500px;
-  overflow: auto;
-}
-
 .profile .card-2__about-me-paragraph p {
   margin-top: 20px;
 }
 
 .profile .card-2__skills {
   height: 100%;
-  overflow: auto;
+}
+
+.profile .card-2__skills-page {
+  display: none;
 }
 
 .profile .card-2__skills .hr-dec-prof {
@@ -561,6 +557,7 @@ ul {
 }
 
 .profile .card-2__skills-project-page {
+  display: none;
   position: relative;
 }
 
@@ -632,7 +629,6 @@ ul {
 .profile .card-2__hobby {
   display: none;
   height: 100%;
-  overflow: auto;
 }
 
 .profile .card-2__hobby .hr-dec-prof {
@@ -676,12 +672,16 @@ ul {
 @media (max-width: 650px) {
   .profile .card-2 {
     padding-bottom: 100px;
+    overflow: none;
   }
 }
 
 .profile__skills {
   height: 100%;
-  overflow: auto;
+}
+
+.profile__skills-page {
+  display: none;
 }
 
 .profile__skills .hr-dec-prof {
@@ -692,6 +692,7 @@ ul {
 }
 
 .profile__skills-project-page {
+  display: none;
   position: relative;
 }
 
@@ -795,6 +796,7 @@ ul {
         flex-wrap: wrap;
   }
   .profile .nav-top-page {
+    white-space: nowrap;
     display: block;
   }
 }
@@ -827,7 +829,7 @@ body {
   bottom: 0;
 }
 
-.card-2__skills-page, .dark-mode {
+.dark-mode {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

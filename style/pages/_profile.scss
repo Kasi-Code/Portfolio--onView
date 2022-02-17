@@ -20,9 +20,9 @@ ul {
     "./card-2",
     "./skills",
     "../components/bottom-nav";
-    // position: relative;
+    // background-color: aliceblue;
     max-width: 1200px;
-    max-height: 700px;
+    height: 100%;
     color: $txt-color-night;
     gap: $gap;
     padding: 10px;
@@ -36,6 +36,7 @@ ul {
     .profile {
         flex-wrap: wrap;
         .nav-top-page {
+            white-space: nowrap;
             display: block;
         }
     }

@@ -2,7 +2,9 @@
 &__skills {
     // display: none;
         height: 100%;
-        overflow: auto;
+    &-page {
+        display: none;
+    }
     .hr-dec-prof {
         @include hr-decoration-prof;
     }

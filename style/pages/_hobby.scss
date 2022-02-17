@@ -1,9 +1,8 @@
 
 &__hobby {
     display: none;
-        height: 100%;
-        overflow: auto;
-        // @include flex-column;
+    height: 100%;
+    // @include flex-column;
     .hr-dec-prof {
         @include hr-decoration-prof;
     }

@@ -1,9 +1,11 @@
 .card-2 {
-    max-width: 890px;
+    height: 670px;
+    width: 150%;
     background: $color-night;
     padding: 20px 100px;
     border-radius: $br-20;
     position: relative;
+    overflow: auto;
     @import 
     "./about-me",
     "./skills",
@@ -23,5 +25,6 @@
 @media (max-width: 650px) {
     .card-2 {
         padding-bottom: 100px;
+        overflow: none;
     }
 }

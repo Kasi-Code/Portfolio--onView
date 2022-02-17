@@ -1,12 +1,9 @@
 
 &__about-me {
-    display: none;
     .hr-dec-prof {
         @include hr-decoration-prof;
     }
     &-paragraph {
-        max-height: 500px;
-        overflow: auto;
         p {
             margin-top: 20px;
         }

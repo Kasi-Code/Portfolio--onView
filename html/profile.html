@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="card-2">
-            <div class="card-2__about-me">              
+            <div class="card-2__about-me about-me-page" id="about-me-page">              
                 <h2>About Me</h2>
                 <hr class="hr-dec-prof">
                 <br>
@@ -74,155 +74,151 @@
                 <br><br>
                 <!-- <div class="goTopPage"><a href="#">Top Page</a></div> -->
             </div>
-            <div class="card-2__skills">
-                <div class="card-2__skills-page">
-                    <h2>Skills</h2>
-                    <hr class="hr-dec-prof">
-                    <p class="sub-heading">Front-End Development</p>
-                    <ul class="txt-sub">
-                        <li>HTML</li>
-                        <li>CSS/SASS/SCSS</li>
-                        <ul>
-                            <li>BEM naming and reusable</li>
-                            <li>CSS animation</li>
-                        </ul>
-                        <li>JavaScript</li>
-                        <ul class="listOfJS">
-                            <li>Interactive Websites</li>
-                            <li>Intermediate JavaScript</li>
-                            <li>Command Line</li>
-                            <li>Git / Github</li>
-                            <li>Front-end Applications with React</li>
-                            <li>jQuery</li>
-                            <li>Back-End Development</li>
-                            <li>SQL and Databases for Web Development</li>
-                            <li>Persistent API</li>
-                            <li>Test-Driven Development</li>
-                        </ul>
-                    </ul>
-                    <p class="sub-heading">Programming Languages</p>
-                    <ul class="txt-sub">
-                        <li>Python 3</li>
-                        <li>PHP</li>
-                        <li>Java</li>
-                        <li>C#</li>
-                    </ul>
-                    <div class="projectButton button" id="projectButton">
-                    <p class="sub-heading"><a class="w3-hover-opacity" href="#projectPage">>> PROJECTS <<</a></p>                
-                </div>
-                <p class="txt-sub" style="font-style: italic;">- I have gained all the development skills through Codecademy and Openclassroom outsources with the assistance of
-                    tutors/mentor from the IT Career Switch and GlosCol Skills Bootcamp.
-                </p>
-                <br>
-                <p class="txt-sub" style="font-style: italic;">- I have passed and obtained the certificates of an Official Microsoft Exam for HTML, CSS and more.
-                </p>
-                <p class="sub-heading">Others</p>    
+            <div class="card-2__skills-page skills-page" id="skills-page">
+                <h2>Skills</h2>
+                <hr class="hr-dec-prof">
+                <p class="sub-heading">Front-End Development</p>
                 <ul class="txt-sub">
-                    <li>Photoshop</li>
-                    <li>Video editing</li>
+                    <li>HTML</li>
+                    <li>CSS/SASS/SCSS</li>
+                    <ul>
+                        <li>BEM naming and reusable</li>
+                        <li>CSS animation</li>
+                    </ul>
+                    <li>JavaScript</li>
+                    <ul class="listOfJS">
+                        <li>Interactive Websites</li>
+                        <li>Intermediate JavaScript</li>
+                        <li>Command Line</li>
+                        <li>Git / Github</li>
+                        <li>Front-end Applications with React</li>
+                        <li>jQuery</li>
+                        <li>Back-End Development</li>
+                        <li>SQL and Databases for Web Development</li>
+                        <li>Persistent API</li>
+                        <li>Test-Driven Development</li>
+                    </ul>
                 </ul>
-                </div>
-                <div class="card-2__skills-project-page">
-                    <h2>Projects</h2>
-
-                    <hr class="hr-dec-prof">
-
-                    <div class="project-container">       
-                        <p class="sub-heading">Moji Gazzetter</p>
-                        <div class="container__item">
-                            <div class="con-i-thumnail">
-                                <a href="https://www.wkasinram.co.uk/Gazetteer.html" target="_blank">
-                                <img class="con-i-thumnail-img" src="/media/gazzetter.jpg" alt="moji Gazzetter project">
-                                </a>
-                            </div>
-                            <div class="project-description">
-                                <p class="txt-sub">
-                                    A map-based app to provide information on countries – with a focus on a “mobile first” development. Developed by HTML, CSS and JavaScript with JQuery modules that use PHP server-based components to source data from third party APIs (Geonames, OpenWeather). The solution is assessed on its delivery to specification, functionality, and usability.
-                                </p>
-                            </div>
-                        </div>
-                        <p class="sub-heading">Company Directory</p>
-                        <div class="container__item">
-                            <div class="con-i-thumnail">
-                                <a href="https://www.wkasinram.co.uk/cDirectory.html" target="_blank">
-                                <img class="con-i-thumnail-img" src="/media/companyDirectory.jpg" alt="company directory project">
-                            </a>
-                            </div>
-                            <div class="project-description">
-                                <p class="txt-sub">
-                                    Showing an understanding of CRUD. A user requirements document which triggers the release of SQL allowing to develop a “mobile-first” application to maintain a company personnel database (MySQL).
-                                </p>
-                            </div>
-                        </div>       
-                        <p class="sub-heading">Booki</p>
-                        <div class="container__item">
-                            <div class="con-i-thumnail">
-                                <a href="https://kasi-booki.netlify.app" target="_blank">
-                                <img class="con-i-thumnail-img" src="/media/booki.png" alt="Booki project">
-                            </a>
-                            </div>
-                            <div class="project-description">
-                                <p class="txt-sub">UI/UX focused project.</p>
-                                <p class="txt-sub">
-                                    A small company which offers a holiday planning tool. 
-                                </p>
-                                <p class="txt-sub">
-                                    Integrate web content - Dealing with the embedding of the design mock-ups as HTML/CSS mock-ups which showcase the understanding of using Flexbox, Block and Inline-block elements.
-                                </p>
-                                <p class="txt-sub">
-                                    Implement a crossed platform responsive layout for desktop, tablet and mobile which embed the desktop-first website.
-                                </p>
-                            </div>
-                        </div>       
-                        <p class="sub-heading">OhMyFood</p>
-                        <div class="container__item">
-                            <div class="con-i-thumnail">
-                                <a href="https://kasi-ohmyfood.netlify.app/index.html" target="_blank">
-                                <img class="con-i-thumnail-img" src="/media/OhMyFood.png" alt="Booki project">
-                            </a>
-                            </div>
-                            <div class="project-description">
-                                <p class="txt-sub">UI/UX focused project.</p>
-                                <p class="txt-sub">Ohmyfood is an online food ordering company.</p>
-                                <p class="txt-sub">
-                                    Showcase BEM naming where a section containing the four menus in the form of cards. When clicking on the card,
-                                    the user is redirected to the menu page.
-                                </p>
-                                <p class="txt-sub">
-                                    Showcase of using CSS animations and transitions, no JavaScript, or library.  <!-- <-- working on this -->
-                                </p>
-                                <p class="txt-sub">
-                                    Mobile-first cross platform website including tablet and desktop.
-                                </p>
-                            </div>
-                        </div>   
-                        <p class="sub-heading">Moji Flight</p>
-                        <div class="container__item">
-                            <div class="con-i-thumnail">
-                                <a href="/html/mojiFlight.html" target="_blank">
-                                <img class="con-i-thumnail-img" src="/media/mojiFlightProject.jpg" alt="moji flight project">
-                            </a>
-                            </div>
-                            <div class="project-description">
-                                <p class="txt-sub">
-                                    I have created this project by using just frameworks.
-                                </p>
-                                <p class="txt-sub">
-                                    <em style="font-size: 10px;">"I personally think this is cheating as I believe knowing the core basic of HTML and CSS is essential but I see the benefit is of using frameworks and bootstrap. I am amazed myself of how fast and easy it is to create the webpage with this new technique."</em>
-                                </p>
-                            </div>
-                        </div>      
-                    </div>
-                    
-                    <p><a class="skills-btn btn" href="#skillPage">> Skills <</a></p>            
-                </div>
-                <br><br>
-                <!-- <div class="goTopPage"><a href="#">Top Page</a></div> -->
+                <p class="sub-heading">Programming Languages</p>
+                <ul class="txt-sub">
+                    <li>Python 3</li>
+                    <li>PHP</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                </ul>
+                <div class="project-btn button">
+                <p class="sub-heading"><a class="project-btn" href="#project-page">>> PROJECTS <<</a></p>                
             </div>
-            <div class="card-2__hobby">
+            <p class="txt-sub" style="font-style: italic;">- I have gained all the development skills through Codecademy and Openclassroom outsources with the assistance of
+                tutors/mentor from the IT Career Switch and GlosCol Skills Bootcamp.
+            </p>
+            <br>
+            <p class="txt-sub" style="font-style: italic;">- I have passed and obtained the certificates of an Official Microsoft Exam for HTML, CSS and more.
+            </p>
+            <p class="sub-heading">Others</p>    
+            <ul class="txt-sub">
+                <li>Photoshop</li>
+                <li>Video editing</li>
+            </ul>
+            </div>
+            <div class="card-2__skills-project-page project-page" id="project-page">
+                <h2>Projects</h2>
+
+                <hr class="hr-dec-prof">
+
+                <div class="project-container">       
+                    <p class="sub-heading">Moji Gazzetter</p>
+                    <div class="container__item">
+                        <div class="con-i-thumnail">
+                            <a href="https://www.wkasinram.co.uk/Gazetteer.html" target="_blank">
+                            <img class="con-i-thumnail-img" src="/media/gazzetter.jpg" alt="moji Gazzetter project">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <p class="txt-sub">
+                                A map-based app to provide information on countries – with a focus on a “mobile first” development. Developed by HTML, CSS and JavaScript with JQuery modules that use PHP server-based components to source data from third party APIs (Geonames, OpenWeather). The solution is assessed on its delivery to specification, functionality, and usability.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="sub-heading">Company Directory</p>
+                    <div class="container__item">
+                        <div class="con-i-thumnail">
+                            <a href="https://www.wkasinram.co.uk/cDirectory.html" target="_blank">
+                            <img class="con-i-thumnail-img" src="/media/companyDirectory.jpg" alt="company directory project">
+                        </a>
+                        </div>
+                        <div class="project-description">
+                            <p class="txt-sub">
+                                Showing an understanding of CRUD. A user requirements document which triggers the release of SQL allowing to develop a “mobile-first” application to maintain a company personnel database (MySQL).
+                            </p>
+                        </div>
+                    </div>       
+                    <p class="sub-heading">Booki</p>
+                    <div class="container__item">
+                        <div class="con-i-thumnail">
+                            <a href="https://kasi-booki.netlify.app" target="_blank">
+                            <img class="con-i-thumnail-img" src="/media/booki.png" alt="Booki project">
+                        </a>
+                        </div>
+                        <div class="project-description">
+                            <p class="txt-sub">UI/UX focused project.</p>
+                            <p class="txt-sub">
+                                A small company which offers a holiday planning tool. 
+                            </p>
+                            <p class="txt-sub">
+                                Integrate web content - Dealing with the embedding of the design mock-ups as HTML/CSS mock-ups which showcase the understanding of using Flexbox, Block and Inline-block elements.
+                            </p>
+                            <p class="txt-sub">
+                                Implement a crossed platform responsive layout for desktop, tablet and mobile which embed the desktop-first website.
+                            </p>
+                        </div>
+                    </div>       
+                    <p class="sub-heading">OhMyFood</p>
+                    <div class="container__item">
+                        <div class="con-i-thumnail">
+                            <a href="https://kasi-ohmyfood.netlify.app/index.html" target="_blank">
+                            <img class="con-i-thumnail-img" src="/media/OhMyFood.png" alt="Booki project">
+                        </a>
+                        </div>
+                        <div class="project-description">
+                            <p class="txt-sub">UI/UX focused project.</p>
+                            <p class="txt-sub">Ohmyfood is an online food ordering company.</p>
+                            <p class="txt-sub">
+                                Showcase BEM naming where a section containing the four menus in the form of cards. When clicking on the card,
+                                the user is redirected to the menu page.
+                            </p>
+                            <p class="txt-sub">
+                                Showcase of using CSS animations and transitions, no JavaScript, or library.  <!-- <-- working on this -->
+                            </p>
+                            <p class="txt-sub">
+                                Mobile-first cross platform website including tablet and desktop.
+                            </p>
+                        </div>
+                    </div>   
+                    <p class="sub-heading">Moji Flight</p>
+                    <div class="container__item">
+                        <div class="con-i-thumnail">
+                            <a href="/html/mojiFlight.html" target="_blank">
+                            <img class="con-i-thumnail-img" src="/media/mojiFlightProject.jpg" alt="moji flight project">
+                        </a>
+                        </div>
+                        <div class="project-description">
+                            <p class="txt-sub">
+                                I have created this project by using just frameworks.
+                            </p>
+                            <p class="txt-sub">
+                                <em style="font-size: 10px;">"I personally think this is cheating as I believe knowing the core basic of HTML and CSS is essential but I see the benefit is of using frameworks and bootstrap. I am amazed myself of how fast and easy it is to create the webpage with this new technique."</em>
+                            </p>
+                        </div>
+                    </div>      
+                </div>
+                
+                <p><a class="skills-btn btn" href="#skills-page">> Skills <</a></p>            
+            </div>    
+            <div class="card-2__hobby hobby-page" id="hobby-page">
                 <h2>Hobby</h2>
                 <hr class="hr-dec-prof">
-                <p class="txt-sub">- This video was captured at 4k 30fps and edited using a mobile device.</p>
+                <p class="txt-sub">- This video was captured at 4k 30fps and edited using a mobile device.</p>
                 <br>
                 <p class="txt-sub">- This video was edited via the app <em>Power Director</em>.</p>
                 <video class="card-2__hobby-video" alt="video of Kasi's hobby" controls>
@@ -253,14 +249,15 @@
         </div>
         <nav class="bottom-nav">
             <a class="indexButton" href="/index.html">oV</a> 
-            <a class="card-1Button" href="#card-1InfoGrid">Profile</a> 
-            <a class="skillsButton" href="#skillPage">Skills</a> 
-            <a class="hobbyButton" href="#hobbyInfoGrid">Hobby</a> 
+            <a class="about-me-btn" href="#about-me">Profile</a> 
+            <a class="skills-btn" id="skills-btn" href="#skills-page">Skills</a> 
+            <a class="hobby-btn" href="#hobby-page">Hobby</a> 
             <a class="dark-mode" href="#light-btn">Dark &#127769</a> 
             <a class="light-mode" href="#dark-btn">Light &#127774</a>
         </nav>
     </div>
     <script src="/js/themeColor.js"></script>
+    <script src="/js/pageSwitch.js"></script>
     <!-- <script src="/js/weather2.js"></script> -->
 </body>
 </html>
