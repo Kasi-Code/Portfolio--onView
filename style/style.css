@@ -401,6 +401,14 @@ main {
   }
 }
 
+a {
+  color: #969696;
+}
+
+a:visited {
+  color: #969696;
+}
+
 .profile {
   margin: auto;
   display: -webkit-box;
@@ -471,6 +479,12 @@ main {
   margin: 10px 5px;
 }
 
+.profile .card-1__personale-contact .email:hover {
+  color: #e17878;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .profile .card-1__personale__link {
   margin-top: 10px;
 }
@@ -501,6 +515,10 @@ main {
 .profile .card-2__info-paragraph {
   max-height: 500px;
   overflow: auto;
+}
+
+.profile .card-2__info-paragraph p {
+  margin-top: 20px;
 }
 
 @media (max-width: 1000px) {

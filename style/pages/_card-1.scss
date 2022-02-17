@@ -29,6 +29,15 @@
                 margin: 10px 5px;
             }
         }
+        &-contact {
+            .email {
+                &:hover {
+                    color: rgb(225, 120, 120);
+                    font-style: italic;
+                    text-decoration: underline;
+                }
+            }
+        }
         &__link {
             margin-top: 10px;
             // background-color: antiquewhite;

@@ -9,6 +9,9 @@
         &-paragraph {
             max-height: 500px;
             overflow: auto;
+            p {
+                margin-top: 20px;
+            }
         }
     }
 }

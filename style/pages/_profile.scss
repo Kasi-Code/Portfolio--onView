@@ -1,3 +1,9 @@
+a {
+    color: $txt-color-night;
+    &:visited {
+        color: $txt-color-night;        
+    }
+}
 
 .profile {
     @include centre;
