@@ -1,0 +1,49 @@
+
+&-project-page {
+    position: relative;
+    .project-container {
+        // display: none;
+            height: 100%;
+            // overflow: auto;
+            padding-bottom: 40px;
+        .hr-dec-prof {
+            @include hr-decoration-prof;
+        }
+        .container__item {
+            @include flex-row;
+            align-items: center;
+            .con-i-thumnail {
+                @include centre;
+                .con-i-thumnail-img {
+                    max-width: 250px;
+                    border-radius: $br-20;
+                }
+            }
+            .project-description {
+                p {
+                    margin-top: 10px;
+                    padding: 0 10px;
+                }
+            }
+            &:hover {
+                animation: transT .1s ease-in forwards;
+                opacity: .9;
+            }
+        }
+    }
+    .skills-btn {
+        position: absolute;
+        bottom: -10px;
+        margin-left: -26px;
+    }
+}
+@media (max-width: 850px) {
+    .container__item {
+        flex-wrap: wrap;
+    }
+    .project-description {
+        p {
+            padding: 0;
+        }
+    }
+}
