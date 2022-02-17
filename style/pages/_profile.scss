@@ -18,9 +18,11 @@ ul {
     @import 
     "./card-1",
     "./card-2",
-    "./skills";
+    "./skills",
+    "../components/bottom-nav";
+    // position: relative;
     max-width: 1200px;
-    max-height: 90vh;
+    max-height: 700px;
     color: $txt-color-night;
     gap: $gap;
     padding: 10px;
