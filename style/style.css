@@ -478,7 +478,7 @@ main {
   border-radius: 5px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .profile .card-1__personale__list {
     padding: auto 10px;
   }
