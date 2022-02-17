@@ -1,15 +1,13 @@
 
-&-project-page {
+&__project-page {
     display: none;
     position: relative;
+    .hr-dec-prof {
+        @include hr-decoration-prof;
+    }
     .project-container {
-        // display: none;
-            height: 100%;
-            // overflow: auto;
-            padding-bottom: 40px;
-        .hr-dec-prof {
-            @include hr-decoration-prof;
-        }
+        height: 100%;
+        padding-bottom: 40px;
         .container__item {
             @include flex-row;
             align-items: center;
@@ -38,7 +36,7 @@
         margin-left: -26px;
     }
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     .container__item {
         flex-wrap: wrap;
     }
