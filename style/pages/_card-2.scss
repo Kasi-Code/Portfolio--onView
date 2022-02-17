@@ -1,9 +1,19 @@
 .card-2 {
     max-width: 890px;
+    // min-width: 350px;
     background: $color-night;
     padding: 20px 100px;
-    min-height: 100%;
+    // max-height: 100%;
     border-radius: $br-20;
     &__info {
+        &-paragraph {
+            max-height: 500px;
+            overflow: auto;
+        }
     }
+}
+@media (max-width: 1000px) {
+        .card-2 {
+            padding: 20px 10px;
+        }
 }

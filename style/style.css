@@ -424,6 +424,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  max-height: 100%;
 }
 
 .profile .card-1__image-img {
@@ -446,21 +447,29 @@ main {
   background: linear-gradient(to right bottom, black, #1a1919);
   padding: 10px 40px;
   width: 100%;
-  height: 100%;
+  min-width: 350px;
   border-radius: 20px;
 }
 
-.profile .card-1__personale .hr-dec {
-  margin: 20px 0 20px 0;
+.profile .card-1__personale .hr-dec-prof {
   width: 100%;
   -webkit-animation: loading-hr-prof .9s ease-in;
           animation: loading-hr-prof .9s ease-in;
   margin: auto;
+  margin: 10px 0 10px 0;
+}
+
+.profile .card-1__personale-status {
+  margin: 10px 0;
 }
 
 .profile .card-1__personale__list {
   text-align: start;
-  width: 250px;
+  margin: auto;
+}
+
+.profile .card-1__personale__link {
+  margin-top: 10px;
 }
 
 .profile .card-1__personale__link .logo-img {
@@ -469,13 +478,32 @@ main {
   border-radius: 5px;
 }
 
+@media (max-width: 390px) {
+  .profile .card-1__personale__list {
+    padding: auto 10px;
+  }
+  .profile .card-1__personale {
+    padding: 10px 10px;
+  }
+}
+
 .profile .card-2 {
   max-width: 890px;
   background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
   background: linear-gradient(to right bottom, black, #1a1919);
   padding: 20px 100px;
-  min-height: 100%;
   border-radius: 20px;
+}
+
+.profile .card-2__info-paragraph {
+  max-height: 500px;
+  overflow: auto;
+}
+
+@media (max-width: 1000px) {
+  .profile .card-2 {
+    padding: 20px 10px;
+  }
 }
 
 .profile .txt-sub {
@@ -492,7 +520,7 @@ main {
 .bottom-nav {
   margin: auto;
   max-width: 1200px;
-  height: 10vh;
+  height: 50px;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
