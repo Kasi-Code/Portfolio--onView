@@ -21,16 +21,20 @@ ul {
     "./skills";
     max-width: 1200px;
     max-height: 90vh;
-    // overflow: auto;
     color: $txt-color-night;
     gap: $gap;
-    // position: relative;
     padding: 10px;
     @include txt-sub;
+    .nav-top-page {
+        display: none;
+    }
 }
 
 @media (max-width: 650px) {
     .profile {
         flex-wrap: wrap;
+        .nav-top-page {
+            display: block;
+        }
     }
 }

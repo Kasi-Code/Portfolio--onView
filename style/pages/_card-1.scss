@@ -5,6 +5,7 @@
     width: 100%;
     max-height: 100%;
     &__image {
+        @include centre;
         @import "../components/profile-img";
     }
     &__personale {        
@@ -16,7 +17,7 @@
         height: 100%;
         min-width: 350px;
         border-radius: $br-20;
-        overflow: auto;
+        // overflow: auto;
         .hr-dec-prof {
             @include hr-decoration-prof;
         }

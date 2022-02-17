@@ -444,8 +444,12 @@ ul {
   max-height: 100%;
 }
 
+.profile .card-1__image {
+  margin: auto;
+}
+
 .profile .card-1__image-img {
-  height: 350px;
+  max-height: 300px;
   border-radius: 20px;
   margin-bottom: 5px;
 }
@@ -467,7 +471,6 @@ ul {
   height: 100%;
   min-width: 350px;
   border-radius: 20px;
-  overflow: auto;
 }
 
 .profile .card-1__personale .hr-dec-prof {
@@ -521,6 +524,7 @@ ul {
   background: linear-gradient(to right bottom, black, #1a1919);
   padding: 20px 100px;
   border-radius: 20px;
+  position: relative;
 }
 
 .profile .card-2__about-me {
@@ -563,6 +567,43 @@ ul {
   margin-top: 20px;
 }
 
+.profile .card-2__hobby {
+  height: 100%;
+  overflow: auto;
+}
+
+.profile .card-2__hobby .hr-dec-prof {
+  margin: 10px auto 10px auto;
+  width: 90%;
+  -webkit-animation: loading-hr-prof .9s ease-in;
+          animation: loading-hr-prof .9s ease-in;
+}
+
+.profile .card-2__hobby .vid-date {
+  font-style: italic;
+}
+
+.profile .card-2__hobby-video {
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.profile .card-2__hobby-paragraph {
+  max-height: 500px;
+}
+
+.profile .card-2__hobby-paragraph p {
+  margin-top: 20px;
+}
+
+.profile .card-2 .nav-top-page {
+  position: absolute;
+  bottom: 70px;
+  left: 55%;
+  margin-left: -50px;
+}
+
 @media (max-width: 1000px) {
   .profile .card-2 {
     padding: 20px 10px;
@@ -600,10 +641,17 @@ ul {
   font-size: 13px;
 }
 
+.profile .nav-top-page {
+  display: none;
+}
+
 @media (max-width: 650px) {
   .profile {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .profile .nav-top-page {
+    display: block;
   }
 }
 
@@ -636,7 +684,7 @@ body {
   bottom: 0;
 }
 
-.projectsParentContainer, .hobbyInfoGrid, .dark-mode, .projectPage {
+.card-2__skills-page, .card-2__skills, .dark-mode {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

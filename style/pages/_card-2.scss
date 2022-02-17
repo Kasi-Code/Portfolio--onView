@@ -3,9 +3,17 @@
     background: $color-night;
     padding: 20px 100px;
     border-radius: $br-20;
+    position: relative;
     @import 
     "./about-me",
-    "./skills";
+    "./skills",
+    "./hobby";
+    .nav-top-page {
+        position: absolute;
+        bottom: 70px;
+        left: 55%;
+        margin-left: -50px;
+    }
 }
 @media (max-width: 1000px) {
     .card-2 {
