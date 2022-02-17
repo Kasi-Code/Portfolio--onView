@@ -1,0 +1,26 @@
+
+.profile {
+    @include centre;
+    @include flex-row;
+    justify-content: center;
+    @import 
+    "./card-1",
+    "./card-2";
+    max-width: 1200px;
+    height: 85vh;
+    // height: 88.5vh;
+    // background-color: $main-bg-color;
+    // background-color: aliceblue;
+    color: $txt-color-night;
+    gap: $gap;
+    // position: relative;
+    .txt-sub {
+        color: $txt-color-night-sub;
+    }
+}
+
+@media (max-width: 650px) {
+    .profile {
+        flex-wrap: wrap;
+    }
+}

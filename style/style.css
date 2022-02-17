@@ -2,7 +2,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -370,5 +369,120 @@ main {
   .card-index__platform {
     height: 40px;
   }
+}
+
+.profile {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  height: 85vh;
+  color: #969696;
+  gap: 10px;
+}
+
+.profile .card-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 0;
+}
+
+.profile .card-1__image-img {
+  height: 350px;
+  border-radius: 20px;
+}
+
+.profile .card-1__personale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
+  background: linear-gradient(to right bottom, black, #1a1919);
+  padding: 10px 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.profile .card-1__personale__list {
+  text-align: start;
+  width: 250px;
+}
+
+.profile .card-1__personale__link .logo-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.profile .card-2 {
+  max-width: 890px;
+  background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
+  background: linear-gradient(to right bottom, black, #1a1919);
+  padding: 20px 100px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+
+.profile .txt-sub {
+  color: #5a5a5a;
+}
+
+@media (max-width: 650px) {
+  .profile {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.bottom-nav {
+  margin: auto;
+  max-width: 1200px;
+  height: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin-top: 10px;
+  background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
+  background: linear-gradient(to right bottom, black, #1a1919);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  bottom: 0;
+}
+
+.skillsInfoGrid, .projectsParentContainer, .hobbyInfoGrid, .dark-mode {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

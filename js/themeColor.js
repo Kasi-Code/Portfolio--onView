@@ -42,9 +42,9 @@ clickSkills.addEventListener('click', function(){
 const dark = "linear-gradient(to right bottom, rgb(255, 255, 255), rgb(133, 133, 133))";
 const light = "linear-gradient(to right bottom, rgb(0, 0, 0), rgb(26, 25, 25))";
 
-$(".lightButton").on("click", ()=> {
-    $(".lightButton").css("display", "none")
-    $(".darkButton").css("display", "block")
+$(".light-mode").on("click", ()=> {
+    $(".light-mode").css("display", "none")
+    $(".dark-mode").css("display", "block")
     $("body").css("color", "black")
     $("body").css("backgroundColor", "white")
     $(".bottomPageSection, .skillsInfoGrid, .hobbyInfoGrid, .aboutMe, .profileInfoGrid").css("background", dark)
@@ -52,11 +52,11 @@ $(".lightButton").on("click", ()=> {
         
 })
 
-const darkMode = document.querySelector(".darkButton");
+const darkMode = document.querySelector(".dark-mode");
 
 darkMode.addEventListener('click', function(){
-    $(".lightButton").css("display", "block")
-    $(".darkButton").css("display", "none")
+    $(".light-mode").css("display", "block")
+    $(".dark-mode").css("display", "none")
     $("body").css("color", "white")
     $("body").css("backgroundColor", "black")
     $(".bottomPageSection, .skillsInfoGrid, .hobbyInfoGrid, .aboutMe, .profileInfoGrid").css("background", light)

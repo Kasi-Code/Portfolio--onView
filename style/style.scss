@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    // padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 a:link { text-decoration: none; }
@@ -19,3 +19,19 @@ a:link { text-decoration: none; }
 
 // PROFILE PAGE
 
+@import 
+"./pages/profile",
+"./components/bottom-nav";
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: $main-bg-color;
+    text-align: center;
+    bottom: 0;
+}
+
+
+.skillsInfoGrid, .projectsParentContainer, .hobbyInfoGrid, .dark-mode {
+    display: none;
+}
