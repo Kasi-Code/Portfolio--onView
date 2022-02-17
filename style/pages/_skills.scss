@@ -1,14 +1,10 @@
 
 &__skills-page {
-    height: 100%;
     display: none;
     .hr-dec-prof {
         @include hr-decoration-prof;
     }
-    &-paragraph {
-        max-height: 500px;
-        p {
-            margin-top: 20px;
-        }
+    .project-btn {
+        margin: 20px 0;
     }
 }
