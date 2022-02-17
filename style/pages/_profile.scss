@@ -7,13 +7,11 @@
     "./card-1",
     "./card-2";
     max-width: 1200px;
-    height: 85vh;
-    // height: 88.5vh;
-    // background-color: $main-bg-color;
     // background-color: aliceblue;
     color: $txt-color-night;
     gap: $gap;
     // position: relative;
+    padding: 10px;
     .txt-sub {
         color: $txt-color-night-sub;
     }
