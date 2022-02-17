@@ -13,9 +13,7 @@
     gap: $gap;
     // position: relative;
     padding: 10px;
-    .txt-sub {
-        color: $txt-color-night-sub;
-    }
+    @include txt-sub;
 }
 
 @media (max-width: 650px) {

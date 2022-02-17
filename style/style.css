@@ -467,6 +467,10 @@ main {
   margin: auto;
 }
 
+.profile .card-1__personale__list ul {
+  margin: 10px 5px;
+}
+
 .profile .card-1__personale__link {
   margin-top: 10px;
 }
@@ -507,6 +511,7 @@ main {
 
 .profile .txt-sub {
   color: #5a5a5a;
+  font-size: 13px;
 }
 
 @media (max-width: 650px) {

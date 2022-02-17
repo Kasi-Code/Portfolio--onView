@@ -16,9 +16,15 @@
     width: 60%;
     animation: loading-hr .9s ease-in;    
 }
-
 @mixin hr-decoration-prof {
     margin: 10px auto 10px auto;
     width: 90%;
     animation: loading-hr-prof .9s ease-in;    
+}
+
+@mixin txt-sub {
+    .txt-sub {
+        color: $txt-color-night-sub;
+        font-size: $small-text;
+    }
 }

@@ -23,10 +23,11 @@
         }
         &__list {
             text-align: start;
-            // width: 250px;
             @include centre;
-            // padding: 10px 10px;
             // background-color: aqua;
+            ul {
+                margin: 10px 5px;
+            }
         }
         &__link {
             margin-top: 10px;
