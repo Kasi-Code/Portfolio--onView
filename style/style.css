@@ -9,6 +9,10 @@ a:link {
   text-decoration: none;
 }
 
+.txt-italic {
+  font-style: italic;
+}
+
 @-webkit-keyframes loading-skip-btn {
   0% {
     -webkit-transform: translateY(800%);
