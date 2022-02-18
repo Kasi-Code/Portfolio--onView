@@ -530,6 +530,10 @@ ul {
   overflow: auto;
 }
 
+.profile .card-2__about-me {
+  position: relative;
+}
+
 .profile .card-2__about-me .hr-dec-prof {
   margin: 10px auto 10px auto;
   width: 90%;
@@ -541,8 +545,15 @@ ul {
   margin-top: 20px;
 }
 
+.profile .card-2__about-me .top-about-me {
+  width: 100%;
+  position: absolute;
+  margin-top: -25px;
+}
+
 .profile .card-2__skills-page {
   display: none;
+  position: relative;
 }
 
 .profile .card-2__skills-page .hr-dec-prof {
@@ -556,8 +567,15 @@ ul {
   margin: 20px 0;
 }
 
+.profile .card-2__skills-page .top-skills {
+  width: 100%;
+  position: absolute;
+  margin-top: -25px;
+}
+
 .profile .card-2__project-page {
   display: none;
+  position: relative;
 }
 
 .profile .card-2__project-page .hr-dec-prof {
@@ -600,6 +618,12 @@ ul {
   opacity: .9;
 }
 
+.profile .card-2__project-page .top-project {
+  width: 100%;
+  position: absolute;
+  margin-top: -25px;
+}
+
 @media (max-width: 900px) {
   .profile .card-2 .container__item {
     -ms-flex-wrap: wrap;
@@ -612,6 +636,7 @@ ul {
 
 .profile .card-2__hobby {
   display: none;
+  position: relative;
 }
 
 .profile .card-2__hobby .hr-dec-prof {
@@ -637,6 +662,12 @@ ul {
 
 .profile .card-2__hobby-paragraph p {
   margin-top: 20px;
+}
+
+.profile .card-2__hobby .top-hobby {
+  width: 100%;
+  position: absolute;
+  margin-top: -25px;
 }
 
 @media (max-width: 1000px) {

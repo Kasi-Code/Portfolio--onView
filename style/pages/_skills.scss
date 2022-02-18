@@ -1,10 +1,16 @@
 
 &__skills-page {
     display: none;
+    position: relative;
     .hr-dec-prof {
         @include hr-decoration-prof;
     }
     .project-btn {
         margin: 20px 0;
+    }
+    .top-skills {
+        width: 100%;
+        position: absolute;
+        margin-top: -25px;
     }
 }

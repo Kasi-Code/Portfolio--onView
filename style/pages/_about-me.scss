@@ -1,5 +1,6 @@
 
 &__about-me {
+    position: relative;
     .hr-dec-prof {
         @include hr-decoration-prof;
     }
@@ -7,5 +8,10 @@
         p {
             margin-top: 20px;
         }
+    }
+    .top-about-me {
+        width: 100%;
+        position: absolute;
+        margin-top: -25px;
     }
 }

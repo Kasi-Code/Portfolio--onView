@@ -1,6 +1,7 @@
 
 &__project-page {
     display: none;
+    position: relative;
     .hr-dec-prof {
         @include hr-decoration-prof;
     }
@@ -27,6 +28,11 @@
                 opacity: .9;
             }
         }
+    }
+    .top-project {
+        width: 100%;
+        position: absolute;
+        margin-top: -25px;
     }
 }
 @media (max-width: 900px) {
