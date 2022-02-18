@@ -13,6 +13,10 @@ a:link {
   font-style: italic;
 }
 
+.txt-left {
+  text-align: left;
+}
+
 @-webkit-keyframes loading-skip-btn {
   0% {
     -webkit-transform: translateY(800%);
@@ -251,15 +255,15 @@ a:link {
 
 @-webkit-keyframes scaleUp {
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.1) translateY(-1px);
+            transform: scale(1.1) translateY(-1px);
   }
 }
 
 @keyframes scaleUp {
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.1) translateY(-1px);
+            transform: scale(1.1) translateY(-1px);
   }
 }
 
@@ -745,6 +749,11 @@ ul {
           align-items: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.scale-up-btn:hover {
+  -webkit-animation: scaleUp .05s ease-in forwards;
+          animation: scaleUp .05s ease-in forwards;
 }
 
 body {
