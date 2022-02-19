@@ -472,6 +472,61 @@ ul {
   border-radius: 20px;
 }
 
+.profile .card .item #skills-page .project-btn {
+  margin: 20px 0;
+}
+
+.profile .card .item .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile .card .item .list__item .thumnail {
+  margin: auto;
+}
+
+.profile .card .item .list__item .thumnail .thumnail__img {
+  max-width: 250px;
+  border-radius: 20px;
+}
+
+.profile .card .item .list__item .project-description p {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.profile .card .item .list__item:hover {
+  -webkit-animation: transT .1s ease-in forwards;
+          animation: transT .1s ease-in forwards;
+  opacity: .9;
+}
+
+.profile .card .item .skills-btn-page {
+  margin: 40px 0 20px 0;
+}
+
+@media (max-width: 900px) {
+  .profile .card .item .list__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.profile .card .item .vid-date {
+  font-style: italic;
+}
+
+.profile .card .item .video {
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 20px;
+}
+
 .profile .card .item .photo {
   margin: auto;
 }
@@ -581,61 +636,6 @@ ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-#skills-page .project-btn {
-  margin: 20px 0;
-}
-
-.list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-
-.list__item .thumnail {
-  margin: auto;
-}
-
-.list__item .thumnail .thumnail__img {
-  max-width: 250px;
-  border-radius: 20px;
-}
-
-.list__item .project-description p {
-  margin-top: 10px;
-  padding: 0 10px;
-}
-
-.list__item:hover {
-  -webkit-animation: transT .1s ease-in forwards;
-          animation: transT .1s ease-in forwards;
-  opacity: .9;
-}
-
-.skills-btn-page {
-  margin: 40px 0 20px 0;
-}
-
-@media (max-width: 900px) {
-  .list__item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.vid-date {
-  font-style: italic;
-}
-
-.video {
-  margin: 20px 0;
-  width: 100%;
-  border-radius: 20px;
 }
 
 .bottom-nav {

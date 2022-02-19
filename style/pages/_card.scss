@@ -9,7 +9,12 @@
         position: relative;
     }
     .item {
-        @import "../components/item";
+        @import 
+        "../components/item",
+        "./about-me",
+        "./skills",
+        "./project",
+        "./hobby";
         @include item-style;
         .photo {
             @include centre;
