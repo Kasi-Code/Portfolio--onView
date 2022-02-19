@@ -434,13 +434,12 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1200px;
-  height: 100%;
   color: #969696;
   gap: 10px;
-  padding: 10px;
+  padding: 10px 10px 60px 10px;
 }
 
-.profile .card-1 {
+.profile .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,245 +448,106 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-height: 100%;
+  gap: 10px;
 }
 
-.profile .card-1__image {
+.profile .card.card--hero {
+  width: 150%;
+  position: relative;
+}
+
+.profile .card .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 5%;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
+  background: linear-gradient(to right bottom, black, #1a1919);
+  border-radius: 20px;
+}
+
+.profile .card .item .photo {
   margin: auto;
 }
 
-.profile .card-1__image-img {
+.profile .card .item .photo__img {
   max-height: 300px;
   border-radius: 20px;
-  margin-bottom: 5px;
 }
 
-.profile .card-1__personale {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
-  background: linear-gradient(to right bottom, black, #1a1919);
-  padding: 10px 10px;
-  width: 100%;
-  height: 100%;
-  min-width: 350px;
-  border-radius: 20px;
-}
-
-.profile .card-1__personale .hr-dec-prof {
+.profile .card .item .hr-dec-prof {
   margin: 10px auto 10px auto;
   width: 90%;
   -webkit-animation: loading-hr-prof .9s ease-in;
           animation: loading-hr-prof .9s ease-in;
 }
 
-.profile .card-1__personale-status {
+.profile .card .item__status {
   margin: 10px 0;
 }
 
-.profile .card-1__personale__list {
+.profile .card .item__list {
   text-align: start;
   margin: auto;
 }
 
-.profile .card-1__personale__list ul {
+.profile .card .item__list ul {
   margin: 10px 5px;
 }
 
-.profile .card-1__personale-contact .email:hover {
+.profile .card .item__contact .email:hover {
   color: #e17878;
   font-style: italic;
   text-decoration: underline;
 }
 
-.profile .card-1__personale__link {
+.profile .card .item__link {
   margin: 20px auto 10px auto;
 }
 
-.profile .card-1__personale__link .logo-img {
+.profile .card .item__link .logo-img {
   margin: 0 2px;
   height: 40px;
   width: 40px;
   border-radius: 5px;
 }
 
-@media (max-width: 400px) {
-  .profile .card-1__personale__list {
-    padding: auto 10px;
-  }
-  .profile .card-1__personale {
-    padding: 10px 10px;
-  }
-}
-
-.profile .card-2 {
-  height: 670px;
-  width: 150%;
-  background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
-  background: linear-gradient(to right bottom, black, #1a1919);
-  padding: 20px 100px;
-  border-radius: 20px;
-  position: relative;
-  overflow: auto;
-}
-
-.profile .card-2__about-me {
-  position: relative;
-}
-
-.profile .card-2__about-me .hr-dec-prof {
-  margin: 10px auto 10px auto;
-  width: 90%;
-  -webkit-animation: loading-hr-prof .9s ease-in;
-          animation: loading-hr-prof .9s ease-in;
-}
-
-.profile .card-2__about-me-paragraph p {
+.profile .card .item__child .paragraph p {
   margin-top: 20px;
 }
 
-.profile .card-2__about-me .top-about-me {
+.profile .card .item .item__top {
   width: 100%;
   position: absolute;
   margin-top: -25px;
 }
 
-.profile .card-2__skills-page {
-  display: none;
-  position: relative;
+.profile .card .item .top-page {
+  margin: 50px 0 25px 0;
+  white-space: nowrap;
 }
 
-.profile .card-2__skills-page .hr-dec-prof {
-  margin: 10px auto 10px auto;
-  width: 90%;
-  -webkit-animation: loading-hr-prof .9s ease-in;
-          animation: loading-hr-prof .9s ease-in;
-}
-
-.profile .card-2__skills-page .project-btn {
-  margin: 20px 0;
-}
-
-.profile .card-2__skills-page .top-skills {
-  width: 100%;
-  position: absolute;
-  margin-top: -25px;
-}
-
-.profile .card-2__project-page {
-  display: none;
-  position: relative;
-}
-
-.profile .card-2__project-page .hr-dec-prof {
-  margin: 10px auto 10px auto;
-  width: 90%;
-  -webkit-animation: loading-hr-prof .9s ease-in;
-          animation: loading-hr-prof .9s ease-in;
-}
-
-.profile .card-2__project-page .project-container {
-  padding-bottom: 40px;
-}
-
-.profile .card-2__project-page .project-container .container__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.profile .card-2__project-page .project-container .container__item .con-i-thumnail {
-  margin: auto;
-}
-
-.profile .card-2__project-page .project-container .container__item .con-i-thumnail .con-i-thumnail-img {
-  max-width: 250px;
-  border-radius: 20px;
-}
-
-.profile .card-2__project-page .project-container .container__item .project-description p {
-  margin-top: 10px;
-  padding: 0 10px;
-}
-
-.profile .card-2__project-page .project-container .container__item:hover {
-  -webkit-animation: transT .1s ease-in forwards;
-          animation: transT .1s ease-in forwards;
-  opacity: .9;
-}
-
-.profile .card-2__project-page .top-project {
-  width: 100%;
-  position: absolute;
-  margin-top: -25px;
-}
-
-@media (max-width: 900px) {
-  .profile .card-2 .container__item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .profile .card-2 .project-description p {
-    padding: 0;
-  }
-}
-
-.profile .card-2__hobby {
-  display: none;
-  position: relative;
-}
-
-.profile .card-2__hobby .hr-dec-prof {
-  margin: 10px auto 10px auto;
-  width: 90%;
-  -webkit-animation: loading-hr-prof .9s ease-in;
-          animation: loading-hr-prof .9s ease-in;
-}
-
-.profile .card-2__hobby .vid-date {
-  font-style: italic;
-}
-
-.profile .card-2__hobby-video {
-  margin: 20px 0;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.profile .card-2__hobby-paragraph {
-  max-height: 500px;
-}
-
-.profile .card-2__hobby-paragraph p {
-  margin-top: 20px;
-}
-
-.profile .card-2__hobby .top-hobby {
-  width: 100%;
-  position: absolute;
-  margin-top: -25px;
-}
-
-@media (max-width: 1000px) {
-  .profile .card-2 {
-    padding: 20px 10px;
+@media (min-width: 650px) {
+  .profile .top-page {
+    display: none;
   }
 }
 
 @media (max-width: 650px) {
-  .profile .card-2 {
-    padding-bottom: 80px;
-    overflow: none;
+  .profile .top-page {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile .item__list {
+    padding: auto 10px;
   }
 }
 
@@ -716,18 +576,55 @@ ul {
   font-size: 13px;
 }
 
-.profile .nav-top-page {
-  display: none;
-}
-
 @media (max-width: 650px) {
   .profile {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .profile .nav-top-page {
-    white-space: nowrap;
-    display: block;
+}
+
+#skills-page .project-btn {
+  margin: 20px 0;
+}
+
+.list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.list__item .thumnail {
+  margin: auto;
+}
+
+.list__item .thumnail .thumnail__img {
+  max-width: 250px;
+  border-radius: 20px;
+}
+
+.list__item .project-description p {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.list__item:hover {
+  -webkit-animation: transT .1s ease-in forwards;
+          animation: transT .1s ease-in forwards;
+  opacity: .9;
+}
+
+.skills-btn-page {
+  margin: 40px 0 20px 0;
+}
+
+@media (max-width: 900px) {
+  .list__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -764,7 +661,7 @@ body {
   bottom: 0;
 }
 
-.dark-mode {
+.dark-mode, #skills-page, #project-page, #hobby-page {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

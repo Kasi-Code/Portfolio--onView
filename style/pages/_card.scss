@@ -1,0 +1,91 @@
+
+.card {
+    @include flex-column;
+    width: 100%;
+    // height: 100%;
+    gap: $gap;
+    &.card--hero {
+        width: 150%;
+        position: relative;
+    }
+    .item {
+        @import "../components/item";
+        @include item-style;
+        .photo {
+            @include centre;
+            &__img {
+                @import "../components/photo";
+                @include profile-photo-style;
+            }
+        }
+        .hr-dec-prof {
+            @include hr-decoration-prof;
+        }
+        &__status {
+            margin: 10px 0;
+        }
+        &__list {
+            text-align: start;
+            @include centre;
+            ul {
+                margin: 10px 5px;
+            }
+        }
+        &__contact {
+            .email {
+                &:hover {
+                    color: rgb(225, 120, 120);
+                    font-style: italic;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &__link {
+            margin: 20px auto 10px auto;
+            .logo-img {
+                margin: 0 2px;
+                height: 40px;
+                width: 40px;
+                border-radius: 5px;         
+            }
+        }
+        &__child {
+            .paragraph {
+                p {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .item__top {
+            width: 100%;
+            position: absolute;
+            margin-top: -25px;
+        }
+        .top-page {
+            margin: 50px 0 25px 0;
+            white-space: nowrap;
+        }
+    }
+}
+@media (min-width: 650px) {
+    .top-page {
+        display: none;
+    }
+    @mixin item-style {
+        padding: 10px 10px;
+    }
+}
+@media (max-width: 650px) {
+    .top-page {
+        display: block;
+    }
+    @mixin item-style {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+        .item__list {
+            padding: auto 10px;
+        }
+}

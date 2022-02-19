@@ -1,0 +1,9 @@
+
+@mixin item-style {
+    @include flex-column;
+    padding: 10px 5%;
+    width: 100%;
+    height: 100%;
+    background: $color-night;
+    border-radius: $br-20;
+}

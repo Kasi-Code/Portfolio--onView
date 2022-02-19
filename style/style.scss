@@ -21,6 +21,8 @@ a:link { text-decoration: none; }
 
 @import 
 "./pages/profile",
+"./pages/skills",
+"./pages/project",
 "./components/bottom-nav",
 "./components/scale-up-btn";
 
@@ -31,6 +33,6 @@ body {
     text-align: center;
     bottom: 0;
 }
-.dark-mode {
+.dark-mode, #skills-page, #project-page, #hobby-page {
     display: none;
 }
