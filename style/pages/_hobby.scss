@@ -1,27 +1,9 @@
 
-&__hobby {
-    display: none;
-    position: relative;
-    .hr-dec-prof {
-        @include hr-decoration-prof;
-    }
-    .vid-date {
-        font-style: italic;
-    }
-    &-video {
-        margin: 20px 0;
-        width: 100%;
-        border-radius: $br-20;
-    }
-    &-paragraph {
-        max-height: 500px;
-        p {
-            margin-top: 20px;
-        }
-    }
-    .top-hobby {
-        width: 100%;
-        position: absolute;
-        margin-top: -25px;
-    }
+.vid-date {
+    font-style: italic;
+}
+.video {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: $br-20;
 }
