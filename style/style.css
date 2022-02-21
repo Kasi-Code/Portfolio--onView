@@ -347,7 +347,9 @@ main {
 }
 
 .card-index__logo {
-  height: 75px;
+  height: 35%;
+  min-height: 50px;
+  max-height: 75px;
   -webkit-animation: loading-logo 800ms ease-in, scaleUp 1s ease-in 1.5s;
           animation: loading-logo 800ms ease-in, scaleUp 1s ease-in 1.5s;
 }
@@ -397,7 +399,7 @@ main {
   position: absolute;
   margin-right: 10px;
   margin-bottom: 10px;
-  height: 70px;
+  width: 20%;
   -webkit-animation: loading-platform 700ms ease-in;
           animation: loading-platform 700ms ease-in;
 }

@@ -8,7 +8,7 @@
     border-radius: 20px;
     max-width: 600px;
     min-width: 250px;
-    // min-height: 400px;
+    // height: 40vh;
     padding: 20px 10px 20px 10px;
     background: $color-day;
     position: relative;
@@ -17,7 +17,9 @@
 
     animation: loading-form 400ms ease-in;
     &__logo {
-        height: 75px;
+        height: 35%;
+        min-height: 50px;
+        max-height: 75px;
         animation: 
         loading-logo 800ms ease-in,
         scaleUp 1s ease-in 1.5s;
@@ -62,7 +64,7 @@
         position: absolute;
         margin-right: 10px;
         margin-bottom: 10px;
-        height: 70px;
+        width: 20%;
         animation: loading-platform 700ms ease-in;
     }
 }
