@@ -8,6 +8,7 @@
         @import 
         "../components/item";
         @include item-style;
+        position: relative;
         .photo {
             @include centre;
             &__img {
@@ -56,6 +57,16 @@
         .top-page {
             margin: 50px 0 25px 0;
             white-space: nowrap;
+            // background-color: aliceblue;
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+            left: 10%;
+            overflow: hidden;
+            &--none {
+                position: none;
+                margin: 50px 0 25px 0;
+            }
         }
     }
     &.card--hero {
