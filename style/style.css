@@ -448,12 +448,8 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  min-height: 92.5vh;
   gap: 10px;
-}
-
-.profile .card.card--hero {
-  width: 150%;
-  position: relative;
 }
 
 .profile .card .item {
@@ -469,61 +465,6 @@ ul {
   height: 100%;
   background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
   background: linear-gradient(to right bottom, black, #1a1919);
-  border-radius: 20px;
-}
-
-.profile .card .item #skills-page .project-btn {
-  margin: 20px 0;
-}
-
-.profile .card .item .list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-
-.profile .card .item .list__item .thumnail {
-  margin: auto;
-}
-
-.profile .card .item .list__item .thumnail .thumnail__img {
-  max-width: 250px;
-  border-radius: 20px;
-}
-
-.profile .card .item .list__item .project-description p {
-  margin-top: 10px;
-  padding: 0 10px;
-}
-
-.profile .card .item .list__item:hover {
-  -webkit-animation: transT .1s ease-in forwards;
-          animation: transT .1s ease-in forwards;
-  opacity: .9;
-}
-
-.profile .card .item .skills-btn-page {
-  margin: 40px 0 20px 0;
-}
-
-@media (max-width: 900px) {
-  .profile .card .item .list__item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.profile .card .item .vid-date {
-  font-style: italic;
-}
-
-.profile .card .item .video {
-  margin: 20px 0;
-  width: 100%;
   border-radius: 20px;
 }
 
@@ -573,10 +514,6 @@ ul {
   border-radius: 5px;
 }
 
-.profile .card .item__child .paragraph p {
-  margin-top: 20px;
-}
-
 .profile .card .item .item__top {
   width: 10px;
   position: absolute;
@@ -588,6 +525,78 @@ ul {
 .profile .card .item .top-page {
   margin: 50px 0 25px 0;
   white-space: nowrap;
+}
+
+.profile .card.card--hero {
+  width: 150%;
+}
+
+.profile .card.card--hero .item #skills-page {
+  overflow: hidden;
+}
+
+.profile .card.card--hero .item #skills-page .project-btn {
+  margin: 20px 0;
+}
+
+.profile .card.card--hero .item .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile .card.card--hero .item .list__item .thumnail {
+  margin: auto;
+}
+
+.profile .card.card--hero .item .list__item .thumnail .thumnail__img {
+  max-width: 250px;
+  border-radius: 20px;
+}
+
+.profile .card.card--hero .item .list__item .project-description p {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.profile .card.card--hero .item .list__item:hover {
+  -webkit-animation: transT .1s ease-in forwards;
+          animation: transT .1s ease-in forwards;
+  opacity: .9;
+}
+
+.profile .card.card--hero .item .skills-btn-page {
+  margin: 40px 0 20px 0;
+}
+
+@media (max-width: 900px) {
+  .profile .card.card--hero .item .list__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.profile .card.card--hero .item .vid-date {
+  font-style: italic;
+}
+
+.profile .card.card--hero .item .video {
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.profile .card.card--hero .item__child {
+  max-height: 85vh;
+  overflow: auto;
+}
+
+.profile .card.card--hero .item__child .paragraph p {
+  margin-top: 20px;
 }
 
 @media (min-width: 650px) {
