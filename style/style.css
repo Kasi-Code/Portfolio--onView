@@ -306,8 +306,6 @@ main {
   height: 50px;
   -webkit-animation: loading-skip-btn .9s ease-in;
           animation: loading-skip-btn .9s ease-in;
-  -webkit-transition: all .015ms ease-in-out;
-  transition: all .015ms ease-in-out;
 }
 
 .skip-btn:visited {
