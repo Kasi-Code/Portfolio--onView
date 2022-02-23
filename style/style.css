@@ -453,15 +453,7 @@ ul {
 }
 
 .profile .card .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 10px 5%;
-  width: 100%;
   height: 100%;
   background: -webkit-gradient(linear, left top, right bottom, from(black), to(#1a1919));
   background: linear-gradient(to right bottom, black, #1a1919);
@@ -469,8 +461,21 @@ ul {
   position: relative;
 }
 
+.profile .card .item__list {
+  max-width: 300px;
+}
+
 .profile .card .item .photo {
-  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .profile .card .item .photo__img {

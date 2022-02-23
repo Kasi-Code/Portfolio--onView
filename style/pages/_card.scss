@@ -10,7 +10,10 @@
         @include item-style;
         position: relative;
         .photo {
-            @include centre;
+            @include flex-row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
             &__img {
                 @import "../components/photo";
                 @include profile-photo-style;
