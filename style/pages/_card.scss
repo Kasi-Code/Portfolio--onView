@@ -4,6 +4,8 @@
     width: 100%;
     min-height: 92.5vh;
     gap: $gap;
+    @include loading-txt-header;
+    @include loading-txt-p;
     .item {
         @import 
         "../components/item";
@@ -75,13 +77,16 @@
     &.card--hero {
         width: 150%;
         .item {
+            @include loading-txt-header;
             @import 
             "./about-me",
             "./skills",
             "./project",
             "./hobby";
             &__child { 
-                max-height: 85vh;
+                @include loading-txt-p;
+                height: 100%;
+                // max-height: 85vh;
                 overflow: auto;
                 .paragraph {
                     p {

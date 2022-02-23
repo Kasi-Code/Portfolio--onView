@@ -289,6 +289,54 @@ a:link {
   }
 }
 
+@-webkit-keyframes opacity-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loading-txt {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  90% {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes loading-txt {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  90% {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 main {
   background-color: black;
   height: 100vh;
@@ -452,6 +500,46 @@ ul {
   gap: 10px;
 }
 
+.profile .card h2, .profile .card h3:nth-child(0) {
+  -webkit-animation: loading-txt 0s ease-in-out forwards;
+          animation: loading-txt 0s ease-in-out forwards;
+}
+
+.profile .card h2, .profile .card h3:nth-child(1) {
+  -webkit-animation: loading-txt 0.2s ease-in-out forwards;
+          animation: loading-txt 0.2s ease-in-out forwards;
+}
+
+.profile .card h2, .profile .card h3:nth-child(2) {
+  -webkit-animation: loading-txt 0.4s ease-in-out forwards;
+          animation: loading-txt 0.4s ease-in-out forwards;
+}
+
+.profile .card h2, .profile .card h3:nth-child(3) {
+  -webkit-animation: loading-txt 0.6s ease-in-out forwards;
+          animation: loading-txt 0.6s ease-in-out forwards;
+}
+
+.profile .card h4, .profile .card ul, .profile .card li, .profile .card p:nth-child(0) {
+  -webkit-animation: opacity-fade-in 0s ease-in, loading-txt 0s ease-in-out;
+          animation: opacity-fade-in 0s ease-in, loading-txt 0s ease-in-out;
+}
+
+.profile .card h4, .profile .card ul, .profile .card li, .profile .card p:nth-child(1) {
+  -webkit-animation: opacity-fade-in 0.7s ease-in, loading-txt 0.5s ease-in-out;
+          animation: opacity-fade-in 0.7s ease-in, loading-txt 0.5s ease-in-out;
+}
+
+.profile .card h4, .profile .card ul, .profile .card li, .profile .card p:nth-child(2) {
+  -webkit-animation: opacity-fade-in 1.4s ease-in, loading-txt 1s ease-in-out;
+          animation: opacity-fade-in 1.4s ease-in, loading-txt 1s ease-in-out;
+}
+
+.profile .card h4, .profile .card ul, .profile .card li, .profile .card p:nth-child(3) {
+  -webkit-animation: opacity-fade-in 2.1s ease-in, loading-txt 1.5s ease-in-out;
+          animation: opacity-fade-in 2.1s ease-in, loading-txt 1.5s ease-in-out;
+}
+
 .profile .card .item {
   padding: 10px 5%;
   height: 100%;
@@ -547,6 +635,26 @@ ul {
   width: 150%;
 }
 
+.profile .card.card--hero .item h2, .profile .card.card--hero .item h3:nth-child(0) {
+  -webkit-animation: loading-txt 0s ease-in-out forwards;
+          animation: loading-txt 0s ease-in-out forwards;
+}
+
+.profile .card.card--hero .item h2, .profile .card.card--hero .item h3:nth-child(1) {
+  -webkit-animation: loading-txt 0.2s ease-in-out forwards;
+          animation: loading-txt 0.2s ease-in-out forwards;
+}
+
+.profile .card.card--hero .item h2, .profile .card.card--hero .item h3:nth-child(2) {
+  -webkit-animation: loading-txt 0.4s ease-in-out forwards;
+          animation: loading-txt 0.4s ease-in-out forwards;
+}
+
+.profile .card.card--hero .item h2, .profile .card.card--hero .item h3:nth-child(3) {
+  -webkit-animation: loading-txt 0.6s ease-in-out forwards;
+          animation: loading-txt 0.6s ease-in-out forwards;
+}
+
 .profile .card.card--hero .item #skills-page {
   overflow: hidden;
 }
@@ -607,8 +715,28 @@ ul {
 }
 
 .profile .card.card--hero .item__child {
-  max-height: 85vh;
+  height: 100%;
   overflow: auto;
+}
+
+.profile .card.card--hero .item__child h4, .profile .card.card--hero .item__child ul, .profile .card.card--hero .item__child li, .profile .card.card--hero .item__child p:nth-child(0) {
+  -webkit-animation: opacity-fade-in 0s ease-in, loading-txt 0s ease-in-out;
+          animation: opacity-fade-in 0s ease-in, loading-txt 0s ease-in-out;
+}
+
+.profile .card.card--hero .item__child h4, .profile .card.card--hero .item__child ul, .profile .card.card--hero .item__child li, .profile .card.card--hero .item__child p:nth-child(1) {
+  -webkit-animation: opacity-fade-in 0.7s ease-in, loading-txt 0.5s ease-in-out;
+          animation: opacity-fade-in 0.7s ease-in, loading-txt 0.5s ease-in-out;
+}
+
+.profile .card.card--hero .item__child h4, .profile .card.card--hero .item__child ul, .profile .card.card--hero .item__child li, .profile .card.card--hero .item__child p:nth-child(2) {
+  -webkit-animation: opacity-fade-in 1.4s ease-in, loading-txt 1s ease-in-out;
+          animation: opacity-fade-in 1.4s ease-in, loading-txt 1s ease-in-out;
+}
+
+.profile .card.card--hero .item__child h4, .profile .card.card--hero .item__child ul, .profile .card.card--hero .item__child li, .profile .card.card--hero .item__child p:nth-child(3) {
+  -webkit-animation: opacity-fade-in 2.1s ease-in, loading-txt 1.5s ease-in-out;
+          animation: opacity-fade-in 2.1s ease-in, loading-txt 1.5s ease-in-out;
 }
 
 .profile .card.card--hero .item__child .paragraph p {
