@@ -26,6 +26,7 @@
         &#hobby-page {
             animation: loading-item-in .3s ease-in;
         }
+        @include loading-sub-heading;
         @import 
         "../components/item";
         @include item-style;

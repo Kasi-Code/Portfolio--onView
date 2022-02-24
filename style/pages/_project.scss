@@ -8,6 +8,7 @@
         .thumnail__img {
             max-width: 250px;
             border-radius: $br-20;
+            animation: loading-item-in .5s ease-in;
         }
     }
     .project-description {

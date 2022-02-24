@@ -21,10 +21,31 @@
     width: 90%;
     animation: loading-hr-prof .9s ease-in;    
 }
+@mixin rotate-tools {
+    transition: all .5s ease-in-out;
+}
 
+@mixin rotating1 {
+    transform: rotate(359deg);   
+}
+
+@mixin scale-up-tools {
+    transition: all .015ms ease-in-out;
+}
+
+@mixin scale-up {
+    transform: scale(1.1) translateY(-1px);   
+}
+
+@mixin loading-sub-heading {
+    .sub-heading {
+        animation: loading-sub-heading .8s ease-in;
+    }
+}
 @mixin txt-sub {
     .txt-sub {
         color: $txt-color-night-sub;
         font-size: $small-text;
+        animation: loading-sub-txt 1s ease-in;
     }
 }
