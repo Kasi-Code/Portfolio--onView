@@ -6,7 +6,26 @@
     gap: $gap;
     @include loading-txt-header;
     @include loading-txt-p;
+    overflow: hidden;
     .item {
+        &#photo-section {
+            animation: loading-item-down .8s ease-in;
+        }
+        &#path-section {
+            animation: loading-item-left .4s ease-in;
+        }
+        &#about-me-page {
+            animation: loading-item-up .3s ease-in;
+        }
+        &#skills-page {
+            animation: loading-item-down .3s ease-in;
+        }
+        &#project-page {
+            animation: loading-item-up .3s ease-in;
+        }
+        &#hobby-page {
+            animation: loading-item-in .3s ease-in;
+        }
         @import 
         "../components/item";
         @include item-style;
