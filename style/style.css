@@ -716,6 +716,7 @@ ul {
 
 .profile .card.card--hero .item__child {
   height: 100%;
+  max-height: 85vh;
   overflow: auto;
 }
 

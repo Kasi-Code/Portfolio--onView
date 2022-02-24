@@ -86,7 +86,7 @@
             &__child { 
                 @include loading-txt-p;
                 height: 100%;
-                // max-height: 85vh;
+                max-height: 85vh;
                 overflow: auto;
                 .paragraph {
                     p {
