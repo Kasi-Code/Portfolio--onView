@@ -808,13 +808,13 @@ ul {
 }
 
 .profile .card .item#path-section {
-  -webkit-animation: loading-item-left .4s ease-in;
-          animation: loading-item-left .4s ease-in;
+  -webkit-animation: loading-item-left .5s ease-in;
+          animation: loading-item-left .5s ease-in;
 }
 
 .profile .card .item#about-me-page {
-  -webkit-animation: loading-item-up .3s ease-in;
-          animation: loading-item-up .3s ease-in;
+  -webkit-animation: loading-item-down .3s ease-in;
+          animation: loading-item-down .3s ease-in;
 }
 
 .profile .card .item#skills-page {

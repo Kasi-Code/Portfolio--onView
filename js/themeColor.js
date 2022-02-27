@@ -1,64 +1,24 @@
-// using some part as basic JS to show my knowledge between both basic JS and JQuery
-
-const profilePage = document.querySelector(".profileInfoGrid");
-const hobbyPage = document.querySelector(".hobbyInfoGrid");
-const skillsPage = document.querySelector(".skillsInfoGrid");
-
-const clickProfile = document.querySelector(".profileButton");
-const clickSkills = document.querySelector(".skillsButton");
-const clickHobby = document.querySelector(".hobbyButton");
-
-
-// changing pages
-
-clickProfile.addEventListener('click', function(){
-    profilePage.style.display = "block";
-    hobbyPage.style.display = "none";
-    skillsPage.style.display = "none";
-})
-clickHobby.addEventListener('click', function(){
-    profilePage.style.display = "none";
-    skillsPage.style.display = "none";
-    hobbyPage.style.display = "block";
-})
-clickSkills.addEventListener('click', function(){
-    profilePage.style.display = "none";
-    hobbyPage.style.display = "none";  
-    skillsPage.style.display = "block";  
-    $(".projectPage").css("display", "none")
-    $(".skillPage").css("display", "block")
-})
-    $( "#projectButton" ).click(() => {
-        $("#skillPage").css("display", "none")
-        $("#projectPage").css("display", "block")
-    });
-    $( "#skillButton" ).click(() => {
-        $("#skillPage").css("display", "block")
-        $("#projectPage").css("display", "none")
-    });
+const colorDay = "linear-gradient(to right bottom, rgb(255, 255, 255), rgb(133, 133, 133))";
+const colorNight = "linear-gradient(to right bottom, rgb(0, 0, 0), rgb(26, 25, 25))";
+const txtColorDay = "rgb(30,30,30)";
+const txtColorNight = "rgb(150, 150, 150)";
 
 // changing theme color/mode
 
-const dark = "linear-gradient(to right bottom, rgb(255, 255, 255), rgb(133, 133, 133))";
-const light = "linear-gradient(to right bottom, rgb(0, 0, 0), rgb(26, 25, 25))";
-
 $(".light-mode").on("click", ()=> {
-    $(".light-mode").css("display", "none")
     $(".dark-mode").css("display", "block")
-    $("body").css("color", "black")
-    $("body").css("backgroundColor", "white")
-    $(".bottomPageSection, .skillsInfoGrid, .hobbyInfoGrid, .aboutMe, .profileInfoGrid").css("background", dark)
-        // weatherBG.style.background = dark;
-        
+    $(".light-mode").css("display", "none")
+    $(".profile, .bottom-nav").css("color", txtColorDay)
+    $(".item, .bottom-nav").css("background", colorDay);
+    $("body").css("background-color", "white");
+    $("a").css("color", txtColorDay) 
 })
 
-const darkMode = document.querySelector(".dark-mode");
-
-darkMode.addEventListener('click', function(){
-    $(".light-mode").css("display", "block")
+$(".dark-mode").on("click", ()=> {
     $(".dark-mode").css("display", "none")
-    $("body").css("color", "white")
-    $("body").css("backgroundColor", "black")
-    $(".bottomPageSection, .skillsInfoGrid, .hobbyInfoGrid, .aboutMe, .profileInfoGrid").css("background", light)
-        // weatherBG.style.background = light;
+    $(".light-mode").css("display", "block")
+    $(".profile, .bottom-nav").css("color", txtColorNight)
+    $(".item, .bottom-nav").css("background", colorNight);      
+    $("body").css("background-color", "black"); 
+    $("a").css("color", txtColorNight) 
 })
