@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasi's | Gazetteer</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <!-- <link rel="stylesheet" href="/Leaflet-master/dist/leaflet.css" /> -->
+
+    <link rel="stylesheet" href="libs/css/gazetteer.css">
+</head>
+<body>
+        
+<div class="main">
+
+    <div class="topPageSection">
+        <div class="weather">
+            <table class="weatherTable">
+                <tr>
+                    <td>
+                        <div class="weatherEmoji">
+                                <div class="weatherIcons" id="weatherIcons">                                    
+                                    <span class="changeIcon" id="changeIcon"></span>   
+                                    <img class="cloudyPicture" id="cloudyPicture" src="" alt="">                       
+                                </div>
+                        </div>   
+                    </td>    
+                    <td>
+                        <div class="temp">
+                            <p><span id="temperature"></p>
+                        </div>
+                    </td>                 
+                    <td>
+                        <div class="humidity">
+                            <p><span id="humidity"></p>
+                        </div>
+                        <div class="feelsLike">
+                            <p><span id="feelsLike"></p>
+                        </div>
+                    </td> 
+                    <td>
+                        <div class="weatherCondition">
+                            <p><span id="weatherCondition"></p>   
+                        </div>
+                    </td>                           
+                </tr>
+            </table>           
+        </div>
+        <div class="covid">
+            <h4 class="covidHeading">Covid Results</h4>
+            <table>
+                <tr>
+                    <td class="covidIcon">📈</td>
+                    <td class="covidResultTittle">Active</td>
+                    <td class="covidResultNumber"><span id="active"></span></td>
+                </tr>
+                <tr>
+                    <td class="covidIcon">🛏</td>
+                    <td class="covidResultTittle">Confirmed</td>
+                    <td class="covidResultNumber"><span id="confirmed"></span></td>
+                </tr>
+                <tr>
+                    <td class="covidIcon">⚰</td>
+                    <td class="covidResultTittle">Deaths</td>
+                    <td class="covidResultNumber"><span id="deaths"></span></td>
+                </tr>
+                <tr>
+                    <td class="covidIcon">💚</td>
+                    <td class="covidResultTittle">Recovered</td>
+                    <td class="covidResultNumber"><span id="recovered"></span></td>
+                </tr>
+            </table>          
+        </div>
+    </div>
+
+    <div class="giphyEmbed" id="preloader">
+        <br><br><br><br>
+        <img class="frame" id="frame" src="libs/media/loading.gif" frameBorder="0">
+        <br><br><br><br>
+        <p>Loading Info...</p>
+    </div>
+
+    <div class="dataInfo">
+        <div class="flip buttonUp">
+            <button class="buttonUpStyle">&#8212</button>
+            <div class="showCountryName">
+                <p class="showCountryName"><span id="countryName"></span> <span id="flag" class="flag"></span> <span id="time"></span></p>
+            </div>
+            <div class="showLoading">   
+                <img class="loading" id="loadingSmall" src="libs/media/loading.gif">              
+                <span class="loading" id="loading"></span>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panelInfo">
+                <table>
+                    <tr>
+                        <td>
+                            <p><span id="cityName"></span></p>
+                            <p><span id="population"></span></p> 
+                            <p>
+                                <span id="isoCode"></span>
+                                <span id="currencyName"></span>
+                            </p>
+                        </td>
+                        <td>
+                            <p><span id="exchangeRate"></span> <br>
+                            <span id="currencySymbal"></span><span id="localCurrency"></span>
+                            </p>
+                            <p><span id="currencySymbal2"></span><span id="secondCurrency"></span></p>
+                            <p><span id="currencySymbal3"></span><span id="thirdCurrency"></span></p>
+                        </td>    
+                    </tr>
+                </table>
+
+                <br>
+                
+            </div>
+            
+            <br>
+
+            <div class="wikiSummary">
+                <p><span class="essayIcon" id="essayIcon"></span><span id="wikiSummary"></span></p>
+                <p class="wikipediaInfo"><span id="wikipediaInfo"></span></p>
+            </div>
+            <p>
+                <a target="_blank" class="wikipedia" id="wikipedia">
+                    <span id="wikiLinkIcon" class="wikiLinkIcon"></span>
+                    <span class="wikiLink" id="wikiLink"></span>
+                </a>
+            </p> 
+        </div>
+        
+            <br>
+        
+        <div class="select-container">
+            <div class="custom-select">
+                <select class="countryOption" id="countryOption">
+                    <option class="listOfCountry">👆 Select country</option>
+                </select>
+            </div>
+        </div>
+        <div class="search-container">
+            <form autocomplete="off">
+                <div class="autocomplete">
+                    <input id="myInput" class="myInput" type="text" name="selCountry" placeholder="⌨ Search country">
+                </div>
+                <!-- <button id="submit" class="submit" ><h3>🔍</h3></button> -->
+            </form>
+        </div>
+    </div> 
+
+</div> 
+
+<div class="newsBox" id="newsBox">
+    <div class="newsBoxInner" id="newsBoxInner">
+        <div class="newsHeading" id="newsHeading"><h3>Today's News</h3></div>        
+        <ul class="parentList" id="parentList"></ul>
+    </div>
+</div>
+
+<div class="options">
+    <!-- <div class="weatherButton eachBtn"><button>WEATHER</button></div> -->
+    <div class="covidSlide">
+        <div class="covidButton eachBtn"><p>😷</p></div>
+    </div>
+    <div class="newsSlide">
+        <div class="newsButton eachBtn"><p>📰</p></div>
+    </div>
+    <div class="infoSlide">
+        <div class="infoButton eachBtn"><p>📖</p></div>
+    </div>
+    <div class="searchSwitch">
+        <div class="searchButton eachBtn"><p>🔍</p></div>
+    </div>
+    <div class="selectSwitch">
+        <div class="selectButton eachBtn"><p>🔍</p></div>
+    </div>
+</div>
+
+<div class="bottomPageSection">
+    <div class="navBar">
+        <a href="Gazetteer.html" class="navBtn">Current Location &#10148</a>
+        <a href="index.html" class="navBtn">Main Menu</a>
+    </div>
+</div>
+
+<div class="map" id="map">
+    <div class="mapid" id="mapid"></div>
+</div>
+
+    <!-- <script src="http://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="/vendors/js/leafletProviders.js"></script> -->
+    <!-- <script src="/Leaflet-master/src/Leaflet.js"></script> -->
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+    <!-- <script type="application/javascript" src="libs/js/jquery-3.6.0.min.js"></script> -->
+    <script type="application/javascript" src="libs/js/apiGazetteer.js"></script>  
+
+</body>
+</html>
